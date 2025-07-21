@@ -1,0 +1,4 @@
+<!-- Deprecated VF Pages/components migrated to Lightning  -->
+<apex:page controller="TaskDetailCtrl" cspHeader="true" sidebar="false" standardStylesheets="false" showHeader="false" >
+
+</apex:page>

@@ -1,0 +1,22 @@
+.panel-heading.relativePanel { 
+	position: relative;
+}
+.headerDescCls {
+	padding-top: 1px;
+}
+.modal-header-ext{
+	background-color: #2C7FC8 !important;
+	color: #FFFFFF !important; 
+	padding: 10px 15px 10px 15px !important;
+	font-size: 14px;
+}
+.close-ext{
+	color: white !important;
+	opacity: 1 !important;
+}
+.navbar-ext{
+	min-height: 0px !important;
+	height: 35px !important;
+}
+.errorMsg{
+	display: none !important;

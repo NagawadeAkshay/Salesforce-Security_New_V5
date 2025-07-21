@@ -1,0 +1,128 @@
+.customSidebar {
+	padding-bottom: 40px;
+}
+.customSidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.customSidebar .componentTitle > a,
+.customSidebar .componentTitle .subMenu > a,
+.customSidebar .subMenuLink > a,
+.customSidebar .subMenuHeader > a {
+	position: relative;
+	display: block;
+	padding: 5px 25px 5px 15px;
+	font-size: 12px;
+}
+
+.customSidebar .subMenuLink > a:hover,
+.customSidebar .subMenuLink.lastSelectedSideBarLink a {
+	font-style: italic;
+}
+.customSidebar .componentTitle > a {
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+}
+.customSidebar .componentTitle > a::after,
+.customSidebar .componentTitle .subMenu > a::after {
+	/* content: "\f105"; */
+	content: '+';
+    margin-top: -8px;
+	font-size: 16px;
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	/* font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	transition: 0.5s all; */
+}
+.customSidebar .componentTitle.clicked > a::after,
+.customSidebar .componentTitle .subMenu.clicked > a::after {
+	/* transform: rotate(90deg); */
+	content: '';
+    border-bottom: 1px solid;
+    border-color: inherit;
+    width: 9px;
+    margin-top: 0;
+}
+.customSidebar .fa {
+	font-size: 20px !important;
+	margin: 0;
+	vertical-align: middle;
+}
+.customSidebar .componentTitle .componentIcon {
+	width: 28px;
+	display: inline-block;
+}
+.customSidebar .componentTitle .subMenu > a,
+.customSidebar .subMenuHeader > a {
+	font-size: 13px;
+}
+.customSidebar .componentTitle > a {
+	font-size: 15px;
+}
+.customSidebar .textBoxSearch ul.dropdown-menu {
+	display: block !important;
+	border: 0;
+}
+.customSidebar .componentTitle .subMenu > a {
+    padding-left: 25px;
+}
+.customSidebar .subMenuLink > a { 
+	padding-left: 35px;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/* Toggled */
+
+@media only screen and (min-width: 768px) {
+	.toggled-2 .customSidebar .collapse.in,
+	.toggled-2 .customSidebar .componentTitle > a::after,
+	.toggled-2 .componentTitle > a span:nth-child(2),
+	.toggled-2 .textBoxSearch {
+		display: none;
+	}
+	.customSidebar .componentTitle,
+	.toggled-2 .componentTitle .subMenu {
+		position: relative;
+	}
+	.wrapper.toggled-2 .sidebar-wrapper {
+		overflow: visible;
+	}
+	.toggled-2 .customSidebar .subMenu > a,
+	.toggled-2 .customSidebar .subMenuHeader > a,
+	.toggled-2 .customSidebar .subMenuLink > a {
+		padding: 10px 25px 10px 15px;
+		font-size: 13px;
+	}
+	/*.toggled-2 .componentTitle:hover .textBoxSearch,
+	.toggled-2 .componentTitle:hover > .collapse,
+	.toggled-2 .componentTitle .subMenu:hover > .collapse {
+		position: absolute;
+		display: block;
+		left: 100%;
+		width: 250px;
+		top: 0;
+	}*/
+	.toggled-2 .componentTitle.componentExpand .textBoxSearch,
+	.toggled-2 .componentTitle.componentExpand > .collapse,
+	.toggled-2 .componentTitle .subMenu:hover > .collapse {
+		position: absolute;
+		display: block;
+		left: 100%;
+		width: 250px;
+		top: 0;
+	}
+	.toggled-2 .customSidebar .componentTitle.clicked > a::after,
+	.toggled-2 .customSidebar .componentTitle .subMenu.clicked > a::after {
+		transform: rotate(0);
+	}
+}

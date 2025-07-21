@@ -1,0 +1,23 @@
+.disable-action{
+	color: #808080; 
+	cursor: default !important
+}
+.modal-heading-header1 { 
+	background-color: #2C7FC8 !important; 
+	color: #FFFFFF !important; 
+} 
+.modal-header-ext{
+	background-color: #2C7FC8 !important;
+	color: #FFFFFF !important; 
+	padding: 10px 15px 10px 15px !important;
+	font-size: 14px;
+}
+.close-ext{
+	color: white !important;
+	opacity: 1 !important;
+}
+.btn-ext{
+	border: 0px !important;
+	border-radius: 0px !important;
+}        
+        

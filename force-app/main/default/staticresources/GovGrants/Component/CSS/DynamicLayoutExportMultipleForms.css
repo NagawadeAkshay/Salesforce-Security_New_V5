@@ -1,0 +1,23 @@
+#container {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.icon-div{
+    position: relative;
+    padding-top:100px;
+    width: 100%;
+    margin: auto;
+}
+#loading-icon{
+    font-size: 100px !important;
+    color: green;
+}
+#fail-icon{
+    font-size: 100px !important;
+    color: red;
+}
+.loading-text{
+    padding-top: 35px;
+}

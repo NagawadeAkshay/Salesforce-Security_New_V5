@@ -1,0 +1,9 @@
+.detailList { margin: 0 auto; }
+.detailList tr { margin: 2px 0px; }
+.detailList th { padding-right: 10px; }
+.custWidth { width: 100%; }
+.disabled { cursor: wait !important; }
+#PageTemplateApp { min-height : 0px !important; }
+.custLink { color: #2a6496 !important; padding-right: 10px; padding-left: 10px; }
+.custLink:hover { cursor: pointer; color: #2a4996 !important; }
+.inputFile { display: inline !important; width: 30%; }

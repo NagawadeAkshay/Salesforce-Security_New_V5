@@ -1,0 +1,273 @@
+.tooltipster-noir {
+	border-radius: 0
+}
+
+.tooltipster-noir .tooltipster-content {
+	font-family: Georgia, serif;
+	font-size: 14px;
+	line-height: 16px;
+	padding: 8px 10px;
+	background-color:#f3f2f2
+}
+.tooltipster-base,
+.tooltipster-content,
+.tooltipster-content .panel {
+    background : #f5f3f3;
+}
+
+.panel1 {
+	border-radius: 0!important;
+	margin-bottom: 20px!important
+}
+
+.pkg-form-formList {
+	display: inline!important
+}
+
+.border-ext {
+	border: 0!important;
+	box-shadow: inset 0 0 0!important;
+	margin-bottom: 0!important
+}
+
+.colbrk-ext {
+	font-weight: 700;
+	width: 60%;
+	word-wrap: break-word
+}
+
+.tooltip-title {
+	font-size: 14px;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+.tooltipWrapper .tooltipLabel {
+	font-size: 12px;
+	color: #6D6D6D;
+}
+.tooltipWrapper .tooltipValue {
+	word-wrap:break-word; 
+	font-size: 12px; 
+	font-weight: 500;
+}
+.tooltipWrapper .form-group {
+margin-bottom: 7px;
+}
+
+.referenceOpacity {
+	opacity: 1!important
+}
+
+#TooltipBody {
+	padding: 0!important
+}
+
+#LoadingPopUpDivModal {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	opacity: .7;
+	z-index: 100;
+	display: none
+}
+
+.calendarCSS {
+	padding: 3px 20px;
+	white-space: nowrap;
+	display: block;
+	cursor: pointer;
+	clear: both;
+	text-decoration: none
+}
+
+.checkBoxandRadio label {
+	font-weight: 300;
+	padding: 0 0 0 5px;
+	font-size: 12px;
+	color: #000;
+	margin: 0
+}
+
+.checkBoxandRadio input[type=checkbox],
+.checkBoxandRadio input[type=radio] {
+	padding-right: 5px;
+	margin: 0;
+	min-width: 15px;
+	min-height: 15px;
+}
+
+.wrapper {
+	padding-left: 0;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	overflow: hidden
+}
+
+.wrapper.toggled {
+	padding-left: 215px;
+	overflow: hidden
+}
+
+.sidebar-wrapper {
+	z-index: 1000;
+	position: absolute;
+	left: 215px;
+	width: 0;
+	margin-left: -215px;
+	overflow-y: auto;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease
+}
+
+.wrapper.toggled .sidebar-wrapper {
+	width: 215px
+}
+
+.page-content-wrapper {
+	position: absolute;
+	width: 100%;
+	overflow-x: hidden
+}
+
+.xyz {
+	min-width: 360px
+}
+
+.wrapper.toggled .page-content-wrapper {
+	position: relative;
+	margin-right: 0
+}
+
+.fixed-brand {
+	width: auto
+}
+
+.sidebar-nav {
+	position: absolute;
+	top: 0;
+	width: 215px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 2px
+}
+
+.sidebar-nav li {
+	text-indent: 15px;
+	line-height: 40px
+}
+
+.sidebar-nav li a {
+	display: block;
+	text-decoration: none
+}
+
+.sidebar-nav li a:hover {
+	text-decoration: none
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+	text-decoration: none
+}
+
+.sidebar-nav>.sidebar-brand {
+	height: 65px;
+	font-size: 18px;
+	line-height: 60px
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+	background: 0 0
+}
+
+.no-margin {
+	margin: 0
+}
+
+a:hover {
+	text-decoration: none
+}
+
+@media(min-width:768px) {
+	.wrapper-sidebar {
+		padding-left: 215px
+	}
+	.fixed-brand {
+		width: 215px
+	}
+	.wrapper.toggled {
+		padding-left: 0
+	}
+	.sidebar-wrapper {
+		width: 215px
+	}
+	.wrapper.toggled .sidebar-wrapper {
+		width: 215px
+	}
+	.wrapper.toggled-2 .sidebar-wrapper {
+		width: 50px
+	}
+	.page-content-wrapper {
+		position: relative;
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		transition: all .5s ease
+	}
+	.wrapper.toggled .page-content-wrapper {
+		position: relative;
+		margin-right: 0;
+		padding-left: 215px
+	}
+	.wrapper.toggled-2 .page-content-wrapper {
+		position: relative;
+		margin-right: 0;
+		margin-left: -175px;
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		transition: all .5s ease;
+		width: auto
+	}
+}
+
+.sidebar-wrapper-ext {
+	position: fixed
+}
+
+.padding-right-0 {
+	padding-right: 0
+}
+
+.padding-left-0 {
+	padding-left: 0
+}
+
+.panel-body .panel {
+	margin-bottom: 0
+}
+
+.collapsed .fa-caret-up:before {
+	content: "\f0d7"
+}
+
+#myTabs .panel-heading.pageBlockSeparator {
+	width: 100%;
+	margin: 0 15px 10px;
+	border: 1px solid #ddd !important;
+}
+
+.tabYellowDot {
+	border-radius: 50%;
+	margin: 0 0 3px 3px;
+	background : #ff6939;
+	display: none;
+	height: 13px;
+	width: 13px;
+}

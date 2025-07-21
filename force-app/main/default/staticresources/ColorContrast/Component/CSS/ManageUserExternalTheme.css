@@ -1,0 +1,61 @@
+#themeSelectOptionsContainer{
+	display:table-row;
+	margin:auto;
+}
+.eachOption{
+	display:table-cell;
+	margin-top: 40px;
+}
+.icon-next{
+	font-size:150px !important;
+	margin-top: -100px !important;
+	cursor:pointer !important;
+}
+.icon-prev{
+	font-size:150px !important;
+	margin-top: -100px !important;
+	cursor:pointer !important;
+}
+.bs .carousel-caption{
+	color: #203D51 !important;
+}
+.bs .carousel-indicators li {
+	border: 1px solid #B5D34A !important;
+}
+.bs .carousel-indicators .active {
+	background-color: #E9F3D9 !important;
+}
+#myCarousel {
+	margin-top: 40px;
+}
+.carousel-linked-nav,
+.item img {
+	display: block; 
+	margin: 0 auto;
+}
+.carousel-linked-nav {
+	width: 120px;
+	margin-bottom: 20px;   
+}
+.carousel-control {
+	background: none repeat scroll 0 0 #222222 !important;
+	border: 3px solid #FFFFFF !important;
+	border-radius: 23px 23px 23px 23px !important;
+	color: #FFFFFF !important;
+	font-size: 40px !important;
+	font-weight: 100 !important;
+	height: 40px !important;
+	line-height: 26px !important;
+	margin-top: -20px !important;
+	opacity: 0.5 !important;
+	position: absolute !important;
+	text-align: center !important;
+	top: 40% !important;
+	width: 40px !important;
+}
+.carousel-control:hover,.carousel-control:focus {
+	background: none repeat scroll 0 0 #222222 !important;
+	color: #000000 !important;
+	opacity: 0.7 !important;
+	text-decoration: none !important;
+}

@@ -1,0 +1,281 @@
+.profileOverview span,
+.profileOverview a {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.profileOverview * {
+	font-size: 1em;
+}
+.profileOverview {
+	min-height: 1000px;
+	position: relative;
+	width: 710px;
+	padding: 10px;
+}
+.profileOverview div {
+	float: left;   
+	display: block;
+}
+.profileOverview .collabContact > div + div {
+	width: 50%;    
+	clear: none;
+}
+.profileOverview > div:first-child,
+.profileOverview .filesOwned {
+	width: 69%;
+	margin-right: 2%;
+}
+.profileOverview > div:first-child + div,
+.profileOverview .profileGroups,
+.profileOverview .following {
+	width: 29%;   
+}
+.profileOverview .aboutMe,
+.profileOverview .aboutMe + div {
+	margin-top: 5px;   
+}
+.profileOverview .infoContainer {
+	min-height: 50px;   
+	position: relative;
+}
+.profileOverview .infoContainer > div:first-child {
+	font-weight: bold;
+	border-bottom: 1px solid #d7dbde;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.profileOverview .infoContainer > div:first-child > a {
+	font-weight: normal;
+	float: right;
+}
+.profileOverview .infoContainer > div {
+	word-wrap: break-word;
+}
+.profileOverview > div > div {
+	position: relative;   
+}
+.profileOverview > div:first-child > div,
+.profileOverview .infoContainer div,
+.profileOverview .followers,
+.profileOverview .following {
+	clear: both;
+	width: 100%;
+}
+.profileOverview .following > div.profile,
+.profileOverview .followers > div + div {
+	float: left;
+	clear: none;
+	width: auto;
+}
+.profileOverview .followers > div > a,
+.profileOverview .following > div.profile > a {
+	padding: 0 4px 4px 0;
+	vertical-align: top;
+	float: left;
+}
+.profileOverview .followers > div > a > img,
+.profileOverview .following > div.profile > a > img {
+	height: 30px;
+	width: 30px;
+	float: left;
+}
+.profileOverview .profileGroups span {
+	width: 100%;
+	clear: both;
+	display: block;
+}
+.profileOverview .profileGroups .groupInfo {
+	margin-top: 7px;
+}
+.profileOverview .profileGroups .groupInfo > a > img {
+	float: left;   
+	height: 30px;
+	width: 30px;
+	margin-right: 7px;
+}
+.profileOverview .profileGroups .groupInfo > div {
+	float: left;   
+	clear: none;
+	width: 100px;
+}
+.profileOverview .profileGroups .groupInfo > div > * {
+	height: 14px;
+	width: 100%;
+	display: block;
+}
+.profileOverview .filesOwned > div + div {
+	margin-top: 3px;    
+}
+.profileOverview .filesOwned .fileDiv {
+	width: 16px;   
+	float: left;
+	display: block;
+}
+.profileOverview .filesOwned .fileDiv,
+.profileOverview .following > div.file > a,
+#ShowAllProfileModal > ul.collabProfileModalList > li.file > div:first-child > a {
+	padding-left: 20px;
+	height: 16px;
+	display: block;
+	background: url({!urlfor($Resource.CollabSprites, 'CollabSprites/collabSmallExtensionImages.png')}) no-repeat 0px 0px;
+}
+#ShowAllProfileModal .filterTypeWrapper {
+	display: none;   
+}
+#ShowAllProfileModal .filterTypeWrapper.active {
+	display: block;   
+}
+#ShowAllProfileModal > ul.collabProfileModalList {
+	width: 390px;
+	margin: 0px 5px 30px 5px;
+	padding: 0px;
+	list-style-type: none;
+	float: left;
+	position: relative;
+}
+#ShowAllProfileModal > div {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	clear: both;
+	border-bottom: 1px solid gray;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li {
+	width: 380px;
+	height: 44px;
+	float: left;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	clear: both;
+	border-bottom: 1px solid gray;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li.file {
+	height: 26px;   
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li.file > div:first-child {
+	margin-right: 20px;
+	width: 250px;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li > a {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 100%;
+	float: left;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li > div:first-child {
+	float: left;
+	clear: left;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li > div.profileGroup > div {
+	float: left;   
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li > div:first-child > a.profileImage {
+	float: left;
+	display: block;
+	width: 34px;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li > div:first-child > a + a {
+	float: left;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 220px;
+	margin-right: 20px;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li > div.profileGroup > div > a {
+	display: block;
+	height: 16px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	float: left;
+	clear: right;
+	width: 200px;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li > div.profileGroup > div > span {
+	display: block;   
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li > div:first-child + div {
+	float: left;  
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li > div:first-child + div > a { 
+	padding: 8px 0px 0px 20px;
+	float: left;
+	display: inline;
+	background: url({!urlfor($Resource.CollabSprites, 'CollabSprites/collabFollowSprite.png')}) no-repeat 0px 7px;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li.file > div:first-child + div > a { 
+	background-position: 0px 0px;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li.file > div:first-child + div > a {
+	padding-top: 0px;   
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li > div:first-child + div > a:hover,
+#ShowAllProfileModal > ul.collabProfileModalList > li > div:first-child + div > a:focus,
+#ShowAllProfileModal > ul.collabProfileModalList > li > div:first-child + div > a:active {
+	text-decoration: none;   
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li > div:first-child + div > a.following { 
+	background-position: 0px -19px;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li.file > div:first-child + div > a.following { 
+	background-position: 0px -26px;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li > div:first-child + div > a > span { 
+	display: inline;
+	width: 16px;
+	height: 16px;
+	float: right;
+	margin-left: 5px;
+	background: url({!urlfor($Resource.CollabSprites, 'CollabSprites/collabFollowSprite.png')}) no-repeat 0px -54px;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li > div:first-child + div > a > span:hover,
+#ShowAllProfileModal > ul.collabProfileModalList > li > div:first-child + div > a > span:focus,
+#ShowAllProfileModal > ul.collabProfileModalList > li > div:first-child + div > a > span:active { 
+	background-position: 0px -75px;
+}
+#ShowAllProfileModal > ul.collabProfileModalList img {
+	margin: 2px;
+	height: 30px;
+	width: 30px;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li.nextProfileModalPage {
+	width: 35px;
+	position: absolute;
+	right: 6px;
+	bottom: -27px;
+	border: none;
+	height: auto;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li.prevProfileModalPage {
+	width: 35px;
+	position: absolute;
+	left: 6px;
+	bottom: -27px;
+	border: none;
+	height: auto;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li.nextProfileModalPage > a {
+	width: 28px;
+}
+#ShowAllProfileModal > ul.collabProfileModalList > li.prevProfileModalPage > a {
+	width: 28px;
+}
+#ShowUserFiles a.actionClose {      
+	position: absolute;
+	right: 5px;
+	top: 0px;        
+}
+#ProfileLoadingModal > div {
+	height: 120px;
+	padding: 10px;
+}
+#ProfileLoadingModal img {
+	margin-left: 124px;
+	margin-top: 34px;
+}

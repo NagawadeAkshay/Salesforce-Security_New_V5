@@ -1,0 +1,20 @@
+table{
+}
+td { 
+	padding: 0 20px 15px 15px !important;
+}
+html {
+	//overflow-x: hidden;
+	//overflow-y: auto;
+}
+.bs textarea { 
+	height : 65px !important;
+}
+.hidden508{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}

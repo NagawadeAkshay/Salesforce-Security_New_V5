@@ -1,0 +1,12 @@
+#chartPhaseTabId li.active a {
+	
+	border-left: 1 solid;
+	border-right: 1 solid;
+	font-weight: bold;
+}
+#chartPhaseTabId li a {
+	font-weight: bold;
+}
+.nav-tabs{
+	border-bottom: 0px !important;
+}

@@ -1,0 +1,6 @@
+.picklistArrowLeft, .picklistArrowRight, .rightArrowIcon, .leftArrowIcon, .doubleArrowUp, .upArrowIcon, .downArrowIcon, .doubleArrowDwn {
+	background: url("/img/alohaSkin/combobox_arrows_sprite.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+	height: 20px !important;
+	margin: 0 10px !important;
+	width: 24px !important;
+}

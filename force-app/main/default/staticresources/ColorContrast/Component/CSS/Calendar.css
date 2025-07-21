@@ -1,0 +1,170 @@
+.border-ext {
+	border: 0px !important;
+	box-shadow: inset 0 0px 0px !important;
+	margin-bottom: 0px !important; 
+}
+.tooltip {
+	opacity: 1 !important;
+	filter: alpha(opacity=100);
+}
+#TooltipBody {
+		padding: 0px 0px 0px 17px !important;
+}
+.tooltip-title{
+	font-size: 14px !important;         
+	font-weight: 600;
+	border-bottom: 2px solid #ddd !important;
+	padding-bottom: 10px;
+}
+.custombtn {
+	background-color: #005FB2 !important;
+	color: white !important;
+}
+ .custombtn:hover {
+	background-color: #005FB2 !important;
+	color: white !important;
+	text-decoration: none !important;
+}
+.btnStyle {
+	margin-top: -4px !important;
+	padding: 0px 3px 0px 3px !important;;
+	margin-right: 6px !important;
+	float:right !important;
+}
+.calendar {
+	font-size: 12px !important;
+	font-family: 'Helvetica' !important;
+
+}
+.tooltipster-shadow-ext {
+	border-radius: 10px !important;
+	background: #fff !important;
+	box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.3) !important;
+	color: #2c2c2c !important;
+}
+.tooltipster-shadow-ext .tooltipster-content{
+	font-family: 'Helvetica' !important;
+	font-size: 12px !important;
+	line-height: 14px !important;
+	padding: 8px 5px !important;
+}
+.panel-body {
+	font-size: 12px !important;
+	font-family: 'Helvetica' !important;
+}
+.tooltipster-base {
+	pointer-events: all !important;
+}
+.close1 {
+	font-weight: 600;
+	width: 13px;
+	height: 12px;
+	background: #fff;
+	position: absolute;
+	cursor: pointer;
+	font-size: 14px;
+	right: 5px;
+	top: 5px;
+	color:grey !important;
+}
+.close1:hover {
+	background-position: -13px 0;
+	color:black !important;
+}
+
+.fc .fc-button-group>* {
+	margin:0px 0px 0px 7px !important;
+}
+.btn {
+	background-color: #005FB2 !important;
+	color: white !important;
+}
+/* basic positioning */
+.leftSpan {
+	list-style: none;
+	float: left;
+	padding-right: 12px;
+}
+.legend {
+	border: 1px solid #ccc;
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin: 2px;
+}
+.margin {
+	padding-left:24px;
+	padding-right:24px;
+}
+
+/* your colors */
+.green {
+	//background-color: #3CB879;
+	background-color: #76cda1;
+}
+.red {
+	//background-color: #E94D40;
+	background-color: #ef8279;
+}
+.blue {
+	//background-color: #3598DC;
+	background-color: #71b6e6;
+}
+.yellow {
+	//background-color: #F1C411; 
+	background-color:   #f7da67; 
+
+}
+.fc-toolbar .fc-state-active, .fc-toolbar .ui-state-active{
+	background-color: #005FB2 !important;
+	color: white !important;
+	border-radius: 0 px !important;
+	padding : 2px 5px ! important;
+}
+.fc-view, .fc-view>table{
+	background-color: #F0F0F0;
+}
+.fc td{
+	border-width: 2px;
+ } 
+ .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody,.fc-unthemed th{
+	border-color: #FFFFFF;
+ }
+ 
+.fc-state-default{
+	background-image : none;
+	background-color : #D9D9D9;
+}
+h2{
+	font-family: 'Helvetica' !important;
+	font-size: 17px !important;
+}
+ul#menu li span{
+	display:inline;
+}
+.legendrow{
+padding-top : 6px !important;
+}
+/*.fc-time {
+	display:none;
+}
+*/
+.fc-content .fc-time{
+	display : none;
+}
+.fc-event { 
+	height: 14px;
+}
+.control-label{
+	text-align: left !important;
+	padding-top: 0px !important;
+}
+.popover{
+	max-width: 100%; /* Max Width of the popover (depending on the container!) */
+	width :auto;
+	min-width:auto;
+}
+.popover-title {
+	font-size: 12px !important;
+	font-family:'Helvetica'!important;
+}

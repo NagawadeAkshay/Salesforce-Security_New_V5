@@ -1,0 +1,4 @@
+<!-- Deprecated VF Pages/components migrated to Lightning  -->
+<apex:page controller="MainPageCtrl" cspHeader="true" sidebar="false" docType="html-5.0"  id="ModalTemplateId" showHeader="false" standardStylesheets="false">
+  
+</apex:page>

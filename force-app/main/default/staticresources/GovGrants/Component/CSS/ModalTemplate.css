@@ -1,0 +1,22 @@
+.sidebar{
+	 width:100%;
+	 height:100%;       
+ }
+#PageTemplateApp{
+	  min-height : 0px !important;
+}
+ #LoadingPopUpDivModal{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	opacity: 0.7;
+	z-index: 100;
+	display: none;
+}
+#PageTemplateApp{
+	padding-top: 0;
+}
+.page-content-wrapper {
+	padding-top: 0;
+}

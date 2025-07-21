@@ -1,0 +1,66 @@
+.modal-header-ext{
+	background-color: #2C7FC8 !important;
+	color: #FFFFFF !important; 
+	padding: 10px 15px 10px 15px !important;
+	font-size: 14px;
+}
+.modal-content-ext{        	
+	background-color: #EEF1F6 !important;
+}
+.menuLinks{
+	text-decoration : none;
+	cursor : pointer; 
+}
+.modal-bodyChart {
+	max-height: calc(100vh - 150px) !important;
+	overflow-y: auto !important;
+}
+
+.modal-bodyEnhancedBody {
+	min-height: 0px !important;
+	overflow-y: auto !important;
+	height : auto !important;
+	display : block !important;
+}
+
+.modalChart{
+	overflow:auto !important;
+}
+.modal-dialogChart{
+	width: -moz-fit-content !important;
+	width: -webkit-fit-content !important;
+	width: -o-fit-content !important;
+	width: -ms-fit-content !important;
+	width : auto !important;
+	display : table !important;
+}
+
+
+.modal-dialogChartEnhanced {
+	width: -moz-fit-content !important;
+	width: -webkit-fit-content !important;
+	width: -o-fit-content !important;
+	width: -ms-fit-content !important;
+	width : auto !important;
+}
+
+.modal {
+	overflow-y: hidden !important;
+}
+
+.modalTable{
+	padding: 10px !important;
+	border: 1px solid black !important;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+
+.modal-backdrop{
+	background-color: rgba(0,0,0,0.5);
+}
+.close-ext{
+	color: white !important;
+	opacity: 1 !important;
+}

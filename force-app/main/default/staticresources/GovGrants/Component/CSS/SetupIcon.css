@@ -1,0 +1,31 @@
+.btnenablesetup{
+	font-size:14px;
+	position:fixed;
+	bottom:-3px;
+	right:194px;
+	width:auto;
+}
+.btnenablesetup{
+	padding:10px;
+	outline:0;
+	background-clip:padding-box;
+	z-index:40000;
+}
+.btnsetup{
+	text-align:center;
+	cursor:pointer;
+	font-family:'Open sans';
+	border-radius:2px;
+	background-image:-webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+	background-image:-moz-linear-gradient(top,#f5f5f5,#f1f1f1);
+	background-image:-ms-linear-gradient(top,#f5f5f5,#f1f1f1);
+	background-image:-o-linear-gradient(top,#f5f5f5,#f1f1f1);
+	background-image:linear-gradient(top,#f5f5f5,#f1f1f1);
+}
+.btnsetup:hover{
+	background-image:-webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+	background-image:-moz-linear-gradient(top,#f8f8f8,#f1f1f1);
+	background-image:-ms-linear-gradient(top,#f8f8f8,#f1f1f1);
+	background-image:-o-linear-gradient(top,#f8f8f8,#f1f1f1);
+	background-image:linear-gradient(top,#f8f8f8,#f1f1f1);
+}

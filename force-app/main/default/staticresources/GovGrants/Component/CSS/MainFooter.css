@@ -1,0 +1,22 @@
+
+.footerDiv-content{
+   /* padding-left:250px */
+	padding-left: 210px !important;
+	text-align: center;
+}
+.footerLogo{
+	width: 200px;
+	padding: 10px;
+	height: 60px;
+	margin-right: 25px;
+}
+.text-content{
+	vertical-align: middle;
+	line-height: 60px;
+}
+.footer {   
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */           
+	z-index: 5; 
+}

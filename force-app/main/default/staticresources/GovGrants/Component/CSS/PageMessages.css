@@ -1,0 +1,21 @@
+li.bullet {
+	list-style-type: disc;
+}
+
+.alert-success .fa.fa-times:before,
+.alert-success .close,
+#success-alert .fa.fa-times:before {
+    color: #3c763d !important;
+}
+.alert-info .fa.fa-times:before,
+.alert-info .close  {
+    color: #31708f !important;
+}
+.alert-warning .fa.fa-times:before,
+.alert-warning .close {
+    color: #8a6d3b !important;
+}
+.alert-danger .fa.fa-times:before,
+.alert-danger .close  {
+    color: #a94442 !important;
+} 

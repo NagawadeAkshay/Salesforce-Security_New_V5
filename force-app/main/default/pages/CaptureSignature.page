@@ -1,0 +1,4 @@
+<!-- Deprecated VF Pages/components migrated to Lightning  -->
+<apex:page controller="CaptureSignatureCtrl" cspHeader="true" standardStylesheets="false" showHeader="false" sidebar="false" >
+<!-- This page created for capturing status -->
+</apex:page>

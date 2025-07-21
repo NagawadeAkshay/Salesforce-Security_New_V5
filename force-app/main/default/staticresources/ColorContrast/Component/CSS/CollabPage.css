@@ -1,0 +1,9 @@
+#CollabMenu {   
+	max-width: 314px;
+	float: left;
+	border-right: 1px solid #CFD6E6;
+}
+
+.removePaddingCollab{
+	padding-left: 0px !important;
+}

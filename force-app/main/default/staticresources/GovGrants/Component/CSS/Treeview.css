@@ -1,0 +1,27 @@
+.expand-collapse-right {
+    margin: 20px;
+  }
+  ul.acc-hierarchy{
+    list-style: none;
+    padding: 0 0 0 18px;
+  }
+  .acc-hierarchy li {
+    margin-bottom: 5px;
+  }
+  .acc-hierarchy span.acc-row {
+    padding: 3px 10px;
+    display: inline-block;
+    border-radius: 5px;
+  } 
+  .acc-hierarchy .fa {
+    font-size: 18px!important;
+    vertical-align: middle;
+  }
+
+  .acc-hierarchy .collapse {
+    transition: all 0.5s ease;
+  }
+  .acc-hierarchy .collapse.in {
+    display: block;
+    margin-top: 5px;
+  }

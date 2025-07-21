@@ -1,0 +1,107 @@
+.horizontalHeaderClass{
+	font: 13px 'Open Sans',sans-serif;
+	font-weight:bold;
+	padding: .7em;
+	margin: 0;
+	line-height: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.barStackedheaderClass{
+	font: 13px 'Open Sans',sans-serif;
+	font-weight:bold;
+	padding: .7em;
+	margin: 0;
+	line-height: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1000%;
+	-webkit-transform: rotate(90deg) translateX(20px); 
+	-moz-transform:    rotate(90deg) translateX(20px);
+	-ms-transform:     rotate(90deg) translateX(19px) !important;
+	-o-transform:      rotate(90deg) translateX(20px); 
+	transform:         rotate(90deg) translateX(20px); 
+	-webkit-transform-origin: 2.0em .5em;
+	-moz-transform-origin:    2.0em .5em;
+	-ms-transform-origin:     2.0em .5em;
+	-o-transform-origin:      2.0em .5em;
+	transform-origin:         2.0em .5em;
+	/*z-index : 1;*/
+}
+.chart-wrapper {
+	position: relative;
+	padding-bottom: 40%;
+}
+
+.chart-inner {
+	position: absolute;
+	width: 100%; height: 100%;
+}
+
+.horizontalContentClass{
+	margin: 0 0 1em;
+	-webkit-transform: translateX(0em) translateY(2em); 
+	-moz-transform:    translateX(0em) translateY(2em); 
+	-ms-transform:     translateX(0em) translateY(2em); 
+	-o-transform:      translateX(0em) translateY(2em); 
+	transform:         translateX(0em) translateY(2em);     
+}
+
+.modalTable{
+	padding: 10px !important; 
+}
+
+aside {
+	display: block;
+	position: relative;  
+	padding: 3em 3.5em .5em .7em; 
+	overflow: hidden;
+	height:195px;
+}
+
+.chartContainer {
+	display: block;
+	position: relative;  
+	padding: 3em 3.5em .5em .7em; 
+	overflow: hidden;
+	/*height:195px;
+	border: 1px solid #c8c8c8 !important;*/
+}
+
+.nonPhaseHeight {
+	height : 255px !important;
+}
+
+.label {
+	z-index: 9999 !important;
+}
+
+.highcharts-tooltip {
+	z-index: 9999 !important;   
+}
+
+.highcharts-tooltip span {
+	opacity:1;
+	z-index:9999 !important;
+	padding: 4px;
+	margin-top:10px !important;
+	margin-left:8px !important;
+}
+
+.enhancedViewChartContainerHeight{
+	height : 600px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	overflow: visible !important; 
+}   
+
+.chartTitle {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 240px;
+	display: inline-block;        
+}

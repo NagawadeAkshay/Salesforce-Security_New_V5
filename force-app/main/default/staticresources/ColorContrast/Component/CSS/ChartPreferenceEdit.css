@@ -1,0 +1,21 @@
+#chartPhaseTabId li.active a {
+	border-left: 1px solid #B5D34A;
+	border-right: 1px solid #B5D34A;
+	border-top-color: #285705 !important;
+}
+#chartPhaseTabId li.active a {
+	background-color: #F9F9F9;
+	border-left: 1 solid;
+	border-right: 1 solid;
+	border-top: 3px solid #69D0C6;
+	color: #203D51 !important;
+	font-weight: bold;
+}
+#chartPhaseTabId li a {
+	background-color: #A0A0A0 ;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.nav-tabs{
+	border-bottom: 0px !important;
+}

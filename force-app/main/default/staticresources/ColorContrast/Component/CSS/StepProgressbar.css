@@ -1,0 +1,239 @@
+.contaier-fluid {
+	font-size: 95% !important;
+	margin: 0 auto;
+}
+
+.container-fluid > row {
+	overflow: auto;
+}
+
+#progressBarId, #legendsId {
+	width: 100%;
+	padding-left: 0px !important;
+}
+
+#legendsId {
+	margin-bottom: 10px;
+}
+
+ul.legends {
+	margin: 0;
+	padding: 0 0 5px 0;
+	list-style-type none;
+	float: right;
+	//border: 1px solid black;
+}
+
+ul.legends > fieldset {
+	border: 1px solid black;
+	padding: 7px 4.5px 7px 4.5px;
+}
+
+ul.legends > fieldset > legend{
+	width: inherit;
+	margin-top:-10px;
+	margin-left:5px;
+	margin-bottom: 0px;
+	background:white;
+	font-size: 12px;
+	border-bottom: none;
+	
+}
+
+ul.legends li {
+	display: inline-block;
+	font-size: 80%;
+	list-style: none;
+	margin-right: 5px;
+	line-height: 18px;
+	margin-bottom: 2px;
+}
+
+ul.legends li span {
+	display: block;
+	float: left;
+	height: 16px;
+	width: 20px;
+	margin-right: 5px;
+	margin-left: 0;
+	border: 1px solid #999;
+}
+
+//Style 1
+ol.progtrckr {
+	margin: 0;
+	padding-left: 0px;
+	list-style-type none;
+}
+
+ol.progtrckr li {
+	display: inline-block;
+	text-align: center;
+	line-height: 2.1em;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-left: 0em;
+}
+
+ol.progtrckr[data-progtrckr-steps="1"] li { width: 99%; }
+ol.progtrckr[data-progtrckr-steps="2"] li { width: 49%; }
+ol.progtrckr[data-progtrckr-steps="3"] li { width: 33%; }
+ol.progtrckr[data-progtrckr-steps="4"] li { width: 24%; }
+ol.progtrckr[data-progtrckr-steps="5"] li { width: 19%; }
+ol.progtrckr[data-progtrckr-steps="6"] li { width: 16%; }
+ol.progtrckr[data-progtrckr-steps="7"] li { width: 14%; }
+ol.progtrckr[data-progtrckr-steps="8"] li { width: 12%; }
+ol.progtrckr[data-progtrckr-steps="9"] li { width: 10.8%; }
+
+ol.progtrckr li.progtrckr-done {
+	//color: #3ba10b;
+}
+
+ol.progtrckr li.progtrckr-curr {
+	//color: #1E90FF;
+}
+
+ol.progtrckr li.progtrckr-reject {
+	//color: #E60000;
+}
+
+ol.progtrckr li.progtrckr-todo {
+	//color: #a0a0a0; 
+}
+
+ol.progtrckr li:before {
+	position: relative;
+	top: -0.9em;
+	float: left;
+	left: 50%;
+	line-height: 1em;
+	z-index:1;
+}
+
+ol.progtrckr li.progtrckr-todo:before {
+	content: "\039F";
+	background-color: white;
+	font-size: 2.0em;
+	top: -0.56em;
+	//color: #a0a0a0;
+}
+
+ol.progtrckr li.progtrckr-curr:before {
+	content: "\f021";
+	/* Font Awesome Style */
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	/* End */
+	text-align: center;
+	color: white;
+	background-color: #1E90FF;
+	height: 1.4em;
+	width: 1.4em;
+	line-height: 1.5em;
+	border: none;
+	border-radius: 1.2em;
+}
+
+ol.progtrckr li.progtrckr-done:before {
+	content: "\2713";
+	text-align: center;
+	color: white;
+	height: 1.4em;
+	width: 1.4em;
+	line-height: 1.5em;
+	border: none;
+	border-radius: 1.2em;
+	//background-color: #3ba10b;
+}
+
+ol.progtrckr li.progtrckr-reject:before {
+	content: "\00D7";
+	color: white;
+	height: 1.4em;
+	width: 1.4em;
+	line-height: 1.5em;
+	border: none;
+	border-radius: 1.2em;
+	text-align: center;
+	//background-color: #E60000;
+}
+
+ol.progtrckr li > .mask-before-todo {
+	position: relative;
+	top:-5px;
+	left:0%;
+	width:50%;
+	height: 5px;
+	//background-color: #a0a0a0;
+}
+
+ol.progtrckr li > .mask-before-done {
+	position: relative;
+	top:-5px;
+	left:0%;
+	width:50%;
+	height: 5px;
+	//background-color: #3ba10b;
+}
+
+ol.progtrckr li > .mask-before-reject {
+	position: relative;
+	top:-5px;
+	left:0%;
+	width:50%;
+	height: 5px;
+	//background-color: #E60000;
+}
+
+ol.progtrckr li:first-child > .mask-before-todo {
+	//background-color:#fff;
+}
+
+ol.progtrckr li:first-child > .mask-before-done {
+	//background-color:#fff;
+}
+
+ol.progtrckr li:first-child > .mask-before-reject {
+	//background-color:#fff;
+}
+
+ol.progtrckr li > .mask-after-todo {
+	position: relative;
+	top:-10px;
+	left:52%;
+	width:50%;
+	height: 5px;
+	//background-color: #a0a0a0;
+}
+
+ol.progtrckr li > .mask-after-done {
+	position: relative;
+	top:-10px;
+	left:52%;
+	width:50%;
+	height: 5px;
+	//background-color: #3ba10b;
+}
+
+ol.progtrckr li > .mask-after-reject {
+	position: relative;
+	top:-10px;
+	left:52%;
+	width:50%;
+	height: 5px;
+	//background-color: #E60000;
+}
+
+ol.progtrckr li:last-child > .mask-after-todo {
+	//background-color:#fff;
+}
+
+ol.progtrckr li:last-child > .mask-after-done {
+	//background-color:#fff;
+}
+
+ol.progtrckr li:last-child > .mask-after-reject {
+	//background-color:#fff;
+}

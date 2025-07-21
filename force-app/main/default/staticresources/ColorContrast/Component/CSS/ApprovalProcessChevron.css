@@ -1,0 +1,108 @@
+#chevronBarId {
+	padding-bottom 0px !important;
+	padding-bottom 5px !important;
+}
+ul.chevron {
+	width 100%;
+	list-style none;
+	display inline-table !important;
+	margin-bottom 0px;
+	margin-left 9%;
+	margin-bottom 0px !important;
+}
+ul.chevron li {
+	display inline;
+}
+ul.chevron li a {
+	display block;
+	float left;
+	height 45px;
+	background #3498db;
+	text-align center;
+	padding 8px 15px 15px 35px;
+	position relative;
+	margin 0 2px 0 0; 
+	font-weight 500;
+	font-size 12px;
+	text-decoration none;
+	color #fff;
+}
+ul.chevron li a.actor {
+	display block;
+	float left;
+	height 10px;
+	text-align center;
+	padding 0px 15px 0px 45px;
+	position relative;
+	margin 0 2px 0 0; 
+	font-weight 600;
+	font-size 12px;
+	text-decoration none;
+	color #fff;
+}
+
+ul.chevron li ahover {
+	text-decorationnone;
+	colorwhite;
+}
+ul.chevron li a.actorafter {
+	display none;
+}
+ul.chevron li aafter {
+	content ;  
+	border-top 21px solid transparent;
+	border-bottom 25px solid transparent;
+	border-left 10px solid;
+	position absolute; 
+	right -9px; 
+	top 0;
+	z-index 1;
+}
+ul.chevron li a.actorbefore{
+	display none;
+}
+ul.chevron li abefore {
+	content ;  
+	border-top 21px solid transparent;
+	border-bottom 25px solid transparent;
+	border-left 10px solid white;
+	position absolute; left 0; top 0;
+}
+ul.chevron li a.pending {
+	background #a0a0a0;
+}
+ul.chevron li a.pendingafter {
+	border-left-color #a0a0a0;
+}
+ul.chevron li a.approved {
+	background #146CA6 none repeat scroll 0 0; #3ba10b
+}
+ul.chevron li a.approvedafter {
+	border-left-color #146CA6; #3ba10b
+}
+ul.chevron li a.rejected {
+	background #da635d;
+}
+ul.chevron li a.rejectedafter {
+	border-left-color #da635d;
+}
+ul.chevron li span {
+	display block;
+	color black;
+	padding 0px 0 0 0;
+	font-size 12px;
+	font-weight 500;
+}
+ul.chevron li i{
+	display block !important;
+}
+
+ul.chevron[data-chevron-steps=1] li a{ width 19%; }
+ul.chevron[data-chevron-steps=2] li a{ width 25%; }
+ul.chevron[data-chevron-steps=3] li a{ width 24%; }
+ul.chevron[data-chevron-steps=4] li a{ width 21%; }
+ul.chevron[data-chevron-steps=5] li a{ width 15%; }
+ul.chevron[data-chevron-steps=6] li a{ width 9.7%; }
+ul.chevron[data-chevron-steps=7] li a{ width 8.3%; }
+ul.chevron[data-chevron-steps=8] li a{ width 7.3%; }
+ul.chevron[data-chevron-steps=9] li a{ width 6.3%; }

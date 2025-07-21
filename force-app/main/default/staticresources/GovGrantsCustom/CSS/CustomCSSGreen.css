@@ -1,0 +1,47 @@
+	/* Color Theme Adjustments */
+	.navbar-inner { background-color:#285705; border-bottom-color:#89ac10;}
+	.tabColor {background-color:#285705;}
+	.container-fluid .panel-default > .panel-heading { background-color:#e9f3d9; border: 1px solid #b5d34a; padding-bottom: 15px; padding-top: 10px;}
+	.container-fluid .panel-default > .panel-body, #body .container-fluid .panel-body { border: 1px solid #b5d34a;}
+	#myTabbedContent {border-left:1px solid #B5D34A; border-right:1px solid #B5D34A; border-bottom:1px solid #B5D34A; border-top:1px solid #B5D34A;}
+
+	.bs .badge {background-color:#285705 !important;}
+
+	.tableHeader {background-color:#4e7f29 !important;}
+	#topTabsID li.active a {border-top-color:#285705; border-left: 1px solid #B5D34A; border-right: 1px solid #B5D34A;}
+
+	#myTab .active { background-color:#e9f3d9;}
+	#myTab .active a{  color: #666666 !important; background-color: #e9f3d9 !important;}
+
+	#SideBarMenuApp .container-fluid .panel-default > .panel-heading { background-color:#285705;  border-bottom: 1px solid #b5d34a;}
+	#SideBarMenuApp .bs .panel-heading { border-left: 0px !important; border-right: 0px !important; }
+
+	#SideBarMenuApp .bs .container-fluid .panel-default > .panel-heading .glyphicon { color:#285705;}
+	#SideBarMenuApp .bs .glyphicon { color:#285705;}
+	#SideBarMenuApp .tabColor .glyphicon {color:#ffffff !important;}
+	.searchHeaderCls, .headerDivCls { background-color:#4e7f29 !important;}
+
+	.footerDiv {background-color:#516144;}
+	.flexTableHeader { background-color:#a6df7b !important;}
+	.tableColumnHeader{color:#285705 !important;}
+
+	.customBackground{ background-color: #6b8c52;}
+	.customBtn { background-color:#285705 !important;}
+	li {list-style:none;}
+	
+	/* Top gradient */
+	.navbar-inner
+	{
+		background: #4c792b; /* Old browsers */
+		background: -moz-linear-gradient(top, #4c792b 30%, #285705 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#4c792b), color-stop(100%,#285705)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #4c792b 30%,#285705 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #4c792b 30%,#285705 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #4c792b 30%,#285705 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #4c792b 30%,#285705 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c792b', endColorstr='#285705',GradientType=0 ); /* IE6-9 */
+	}
+
+	.chartHeaderColor{
+		background: #e9f3d9;
+	}  

@@ -1,0 +1,211 @@
+html,
+body {
+	font-family: 'Roboto', sans-serif;
+}
+nav#mainTabsId {
+	margin: 0;
+	position: fixed;
+	width: 100%;
+}
+.navTopHeader li {
+	margin: 0;
+}
+.navTopHeader .navbar-header {
+	display: flex;
+	align-items: center;
+}
+.navTopHeader .navbar-brand,
+.navTopHeader .navbarBrandText {
+	display: inline-flex;
+	align-items: center;
+	padding: 5px 15px;
+	height: auto;
+	font-size: 18px;
+}
+.navTopHeader .navbar-brand {
+    width: 215px;
+}
+.sidebarCollapsed .navTopHeader .navbar-brand {
+    width: auto;
+}
+.navbar-brand>img {
+	max-height: 42px;
+	max-width: 100%;
+	height: auto;
+}
+.navbar-top-links,
+.navMenuHeader .navbar-nav {
+	display: flex;
+	margin: 0;
+}
+.navbar-top-links > li {
+	display: inline-flex;
+	align-items: center;
+}
+.navbar-top-links>li>a {
+	padding: 5px 10px;
+	display: flex;
+	align-items: center;
+	min-height: 100%;
+}
+.navbar-top-links > li > a > img {
+	max-height: 40px;
+	margin: 0;
+}
+.navbar-top-links > li > a .fa-caret-down {
+	margin-left: 5px;
+}
+.navbar-top-links .appDropdown img {
+	margin-right: 5px;
+}
+.navbar-top-links > li .dropdown-menu img {
+	width: 25px;
+}
+.navTopHeader .deptLogo,
+.userDropdown .dropdown-menu>li:first-child>a {
+	cursor: default;
+}
+.navMenuHeader {
+	display: flex;
+	min-height: 36px;
+}
+.navMenuHeader .collapseArrow,
+.navTopHeader .collapseArrowProfile {
+	align-items: center;
+	justify-content: flex-end;
+}
+.navMenuHeader .collapseArrow {
+	width: 200px;
+	display: flex;
+	transition: all 0.5s;
+}
+.navMenuHeader .collapseArrow i#menu-toggle-2,
+.navMenuHeader .collapseArrow i#menu-toggle,
+.navTopHeader .collapseArrowProfile i {
+	padding: 5px 10px;
+	cursor: pointer;
+	margin: 0;
+}
+.isCollapsed .collapseArrow {
+	width: 35px;
+}
+.isCollapsed .collapseArrow i#menu-toggle-2 {
+	transform: rotate(180deg);
+	transform-origin: center;
+}
+.navTopHeader .nav>li>a:focus,
+.navTopHeader .nav>li>a:hover,
+.navTopHeader .nav .open>a,
+.navTopHeader .nav .open>a:focus,
+.navTopHeader .nav .open>a:hover {
+	text-decoration: none;
+}
+.navMenuHeader .nav a::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	height: 2px;
+	transition: 0.5s;
+}
+.navMenuHeader .nav a:hover::after,
+.navTopHeader {
+	width: 100%;
+}
+.navbar-top-links>li:last-child {
+	margin-right: 5px;
+}
+.navMenuHeader li > a {
+	padding: 8px 10px;
+	height: 100%;
+}
+.navMenuHeader li .fa {
+	font-size: 18px !important;
+	margin: 0;
+}
+
+.opacityZero {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+/* Common hide show */
+
+.mobileShowFlex,
+.navbar-brand .collapsedLogo,
+.sidebarCollapsed .expandedLogo {
+	display: none;
+}
+.sidebarCollapsed .collapsedLogo {
+	display: block;
+}
+@media (max-width: 767px) {
+    .navbar-top-links,
+    .navTopHeader .navbar-header,
+    .mobileShowFlex {
+		display: flex;
+	}
+	.navbar-top-links {
+		justify-content: space-around;
+	}
+	.navTopHeader .navbar-header {
+		justify-content: center;
+	}
+	.navTopHeader .navbar-brand,
+	.navTopHeader .navbarBrandText {
+		font-size: 15px;
+	}
+	.navbar-brand>img {
+		margin: 0;
+		height: 32px;
+	}
+	.navTopHeader .dropdown-menu {
+		left: auto;
+		right: 0;
+	}
+    .navMenuHeader .collapseArrow,
+    .navTopHeader .collapseArrowProfile {
+		width: auto;
+	}
+	.navMenuHeader .navbar-nav {
+		margin: 0;
+		display: block;
+	}
+	.navMenuHeader .navbar-toggle {
+		margin: 0;
+		margin-left: auto;
+	}
+	div#myNavbar {
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		padding: 0;
+	}
+	.navTopHeader .navbar-collapse.in {
+		overflow: visible;
+	}
+	.navbar-default .navTopHeader .navbar-collapse,
+	.navbar-default .navMenuHeader .navbar-collapse {
+		border: 0;
+	}
+	/* Common hide show */
+	.sidebarCollapsed .collapsedLogo {
+		display: none;
+	}
+	.sidebarCollapsed .expandedLogo,
+	.navMenuHeader .collapseArrow i#menu-toggle-2 {
+		display: block;
+	}
+}
+@media (min-width: 768px) {
+	.navTopHeader {
+		display: flex;
+	}
+	.navTopHeader .navbar-collapse.collapse {
+		display: flex !important;
+		margin-left: auto;
+	}
+}

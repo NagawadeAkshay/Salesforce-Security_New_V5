@@ -1,0 +1,73 @@
+.tableLinks{
+	cursor:pointer !important;
+	text-decoration:none !important;            
+}
+.fa-share:before{
+	background-color: blue;
+	color: white;
+	padding: 2px;
+}      	
+.fa-pencil:before {
+	background-color: #FF99CC;
+	color: white;
+	padding: 2px;
+}
+.fa-eye:before {
+	padding: 2px;
+	color: #ffffff;
+	background-color: #00CC66;
+}
+.fa-times:before {
+	padding: 2px;
+	color: white;
+	background-color: red;
+}
+.menuIcon{
+	font-size: 18px;
+}
+.separator{ 
+	color:#ECECEC;
+}
+.tableClass{
+	background-color:white !important;
+} 
+.tableHeader{
+	//background-color:#133D50 !important;
+	color:white!important;  
+}
+.tableCell{
+	max-width:80px; /* Customise it accordingly */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.tableRowLinks{
+	cursor:pointer !important;
+	color:black !important;
+	text-decoration:underline!important; 
+}
+.spacer {
+	margin-top: 10px !important; /* define margin as you see fit */
+}
+.textAreaDesc{
+	resize: none;
+}
+.inputContainer {
+	min-width: 400px;
+}
+.inputContainer > button:first-child {
+	margin-right: 15px;
+}
+.attachmentsButton {
+	float: left;
+}
+.modal-heading-header1 { 
+	padding-left: 5px;
+	padding-top:0px !important; 
+	padding-bottom:0px !important; 
+	display:block !important;  
+	width:100%;
+	border-radius: 0px 0px 0 0 !important; 
+	background-color: #005FB2 !important; 
+	color: #FFFFFF !important;
+}

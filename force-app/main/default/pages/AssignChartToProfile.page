@@ -1,0 +1,4 @@
+<!-- Deprecated VF Pages/components migrated to Lightning  -->
+<apex:page standardController="ChartConfig__c" cspHeader="true" standardStylesheets="false" showHeader="false" sidebar="false">
+    
+</apex:page>

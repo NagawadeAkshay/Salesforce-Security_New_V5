@@ -1,0 +1,186 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+} 
+.panel-header-height{
+	height:45px;
+}
+.branch-div {
+	border-left: 1px dotted #aaa;
+	margin-left: 5px;
+	padding-top: 5px;
+}
+.branch-div-min {                    
+	margin-left: 5px;
+	padding-top: 5px;
+}        
+.branch-td {
+   padding:0px !important;
+}
+.leaf {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted #aaa;
+	width: 15px;
+	top: -4px;
+}
+.branch-child-data-container {
+	//padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 26px;
+}
+.lastBranch {
+	border-left: none;           
+}
+.lastBranch .leaf {
+	border-left: 1px dotted #aaa;
+	height: 12px;
+	top: -6px;
+}
+.tableBottomMargin {
+	margin-bottom:5px !important;
+}
+.selectedTd{
+	 background-color: #e5f3ff;
+}
+.modal-backdrop.in {
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1030;
+	background-color: #000;
+}
+.tbody-no-border-top {
+	border-top:0px !important;
+}
+.border-msg {
+	border: 1px solid !important;
+	border-radius: 6px !important;
+}
+.inlineEditIcon {
+	display: none;
+}
+.fieldTd:hover .inlineEditIcon {
+	display : block;
+}
+.tdContent {
+	max-width: 150px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.textAreaContent {
+	width:95%
+}
+.withBottomBorder {
+	border-bottom: 1px solid #ddd;
+}
+.contentCenterH {
+	text-align:center;
+}
+
+#rightActionColumnHeader, .withRightBorder {
+	border-right: 1px solid #ddd;
+}
+
+.withBottomBorder {
+	border-bottom: 1px solid #ddd;
+}
+
+.blackColor {
+	color: black !important;
+}
+.gridEntryTd  input{            
+	text-align: right; 
+	border:0 !important; 
+}
+.gridReadOnlyTd{
+	text-align: left;
+}
+.gridReadOnlyTh{
+	text-align: left;
+	
+}
+.gridReadOnlyTd a{            
+	text-decoration: none !important;
+}
+.gridReadOnlyTh a{            
+	text-decoration: none !important;
+	color:white !important;           
+}
+.totalRow{
+	background-color: #F5F5F5 !important;
+}
+.totalColumn{
+	background-color: #F5F5F5 !important;
+}
+.budgetBody td {
+	border: 1px solid #DDD !important;
+}
+.budgetBody th {
+	border: 1px solid #DDD !important;
+}
+.budgetTh{
+  /*  color: white; */
+	background-color: #2C7FC8;
+}
+.panel-flexgrid-header{
+	background-color: #2C7FC8 !important;
+} 
+	/*----------------------------------------*/
+.n2g-expand-collapse{
+	color: #2C7FC8;
+}
+.n2g-view{
+	background-color: #00CC66 !important;
+	float:left;
+	margin:1px;
+}
+.n2g-edit{
+	 background-color: #FF99CC !important;
+	 float:left;
+	 margin:1px;
+}
+.n2g-delete{
+	 background-color: #F23131 !important;
+	 float:left;
+	 margin:1px;
+}
+.n2gheader{
+	background-color: rgba(221, 221, 221, 0.39);            
+}
+.plus-div{
+	cursor:pointer;
+}    
+.disable-action{
+	color: #808080 !important;
+	cursor: default !important;
+}   
+.gridReadOnlyTh .tableRowLinks{   
+	color:white !important;
+}
+.btn-div-ext{
+	padding: 4px 2px 4px 2px;
+}
+.padding-right-5{
+	padding-right: 5px;
+}
+
+.border-ext{
+	border: 0px !important;
+	box-shadow: inset 0 0px 0px !important;
+	margin-bottom: 0px !important; 
+}
+.tooltip-title{
+	font-size: 14px !important;         
+	font-weight: 600;
+	border-bottom: 2px solid #ddd !important;
+	padding-bottom: 10px;
+}
+#table-ext .tbody-ext:nth-child(even) {background: #f9f9f9  !important;}
+#table-ext .tr-ext {background: transparent !important}

@@ -1,0 +1,25 @@
+ .select2-container,
+.select2-container {
+	padding: 5px;
+	padding-left: 0px;
+}
+.hiddenDiv.select2-search,
+.hiddenDiv.select2-search {
+	display: none;
+	border-right: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	padding-right: 0px;
+	margin-top: -6px;
+	padding-left: 0px;
+	background: #fff;
+}
+.hiddenDiv.select2-search > input,
+.hiddenDiv.select2-search > input {
+	border-right: 0px;
+	border-left: 0px;
+}
+.hiddenDiv.active,
+.hiddenDiv.active {
+	display: block;
+}

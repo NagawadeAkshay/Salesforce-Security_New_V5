@@ -1,0 +1,103 @@
+.modalTable{
+	padding: 10px !important; 
+	border: 1px solid black !important;
+}
+.modalTableFont{
+	color: #000000 !important;
+}
+aside {
+	background:#ffffff !important;
+	display: block;
+	position: relative;  
+	padding: 3em 3.5em .5em .7em; 
+	overflow: hidden;
+
+}
+.contentClass{
+	margin: 0 0 1em;
+	-webkit-transform: translateX(1em) translateY(1.5em); 
+	-moz-transform:    translateX(1em) translateY(1.5em) ; 
+	-ms-transform:     translateX(1em) translateY(1.5em)!important; 
+	-o-transform:      translateX(1em) translateY(1.5em); 
+	transform:         translateX(1em) translateY(1.5em);     
+}
+.horizontalContentClass{
+	margin: 0 0 1em;
+	-webkit-transform: translateX(0em) translateY(2em); 
+	-moz-transform:    translateX(0em) translateY(2em); 
+	-ms-transform:     translateX(0em) translateY(2em); 
+	-o-transform:      translateX(0em) translateY(2em); 
+	transform:         translateX(0em) translateY(2 em);   
+	height:auto !important;  
+}
+.headerClass{
+	font: 13px 'Open Sans',sans-serif;
+	font-weight:bold;
+	color: #000000;
+	padding: .7em;
+	margin: 0;
+	line-height: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1000%;
+	-webkit-transform: rotate(90deg) translateX(20px); 
+	-moz-transform:    rotate(90deg) translateX(20px);
+	-ms-transform:     rotate(90deg) translateX(20px);
+	-o-transform:      rotate(90deg) translateX(20px); 
+	transform:         rotate(90deg) translateX(20px); 
+	-webkit-transform-origin: 2.0em .5em;
+	-moz-transform-origin:    2.0em .5em;
+	-ms-transform-origin:     2.0em .5em;
+	-o-transform-origin:      2.0em .5em;
+	transform-origin:         2.0em .5em;
+}
+
+nonPhaseHeight{
+	height :255px !important;
+}
+.horizontalHeaderClass{
+	font: 13px 'Open Sans',sans-serif;
+	font-weight:bold;
+	color: #000000;
+	padding: .7em;
+	margin: 0;
+	line-height: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.positionImages{
+	transform : translateX(0em) translateY(-1em);
+	-webkit-transform: translateX(4em) translateY(-1em) !important; 
+	-moz-transform:    translateX(0em) translateY(-1em); 
+	-ms-transform:     translateX(0em) translateY(-1em) !important; 
+	-o-transform:      translateX(0em) translateY(-1em); 
+	position :relative;
+	z-index : 2;
+}
+
+.chartContainer {
+	background:#ffffff !important;
+	display: block;
+	position: relative;  
+	padding: 3em 3.5em .5em .7em; 
+	overflow: hidden;
+	/*border: 1px solid #c8c8c8;
+	height:220px !important;*/
+}
+
+.enhancedViewChartContainerHeight{
+	height : 600px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	overflow: visible !important; 
+}
+.chartTitle {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 240px;
+	display: inline-block;        
+}     

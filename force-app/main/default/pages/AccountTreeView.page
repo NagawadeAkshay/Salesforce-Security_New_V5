@@ -1,0 +1,4 @@
+<!-- Deprecated VF Pages/components migrated to Lightning  -->
+<apex:page standardStylesheets="false" cspHeader="true" >
+Obsolete page
+ </apex:page>

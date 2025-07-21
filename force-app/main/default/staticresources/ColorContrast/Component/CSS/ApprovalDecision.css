@@ -1,0 +1,58 @@
+table.radioList td{  
+	padding-right: 27px;
+}
+
+table.radioList label{
+	padding-left: 4px;
+	font-weight: normal;
+}
+
+.approvalCustomLabel{
+	font-weight: 700;
+}
+
+.submitPosition{
+	float: right;
+	padding-right: 15px;
+}
+
+/*
+.approvalMargins{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.approvalComments{
+	width: 400px; 
+	height: 100px;
+}*/
+.requiredMark{
+	color: #d74c3b !important;
+}
+
+.errorMessageStyle{
+	color:red;
+	font-weight:bold;
+	padding-left:14px;
+	padding-top:5px;            
+}
+.approvalMargins{
+}        
+
+.approvalComments{
+}
+.paddingLeft_12{
+	padding-left: 12px;
+}
+.width_41{
+	width: 41%;
+}
+.width_21{
+	width: 21%;
+}
+.width_40{
+	width: 40%;
+}
+.dispaly_none{
+	display:none;
+}

@@ -1,0 +1,155 @@
+#CollabMenu {   
+	max-width: 314px;
+	float: left;
+	border-right: 1px solid #CFD6E6;
+}
+
+.removePaddingCollab{
+	padding-left: 0px !important;
+}
+
+.CollabMainPage .row {
+    padding-top: 5px;
+}
+
+
+/* new css */
+.collabColleagues .collabColleaguesWrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.collabColleagues .contentWrapper,
+.collabCommunityUsers .contentWrapper {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.collabColleagues .colleaguesHeader {
+    white-space: normal;
+    padding-right: 25px;
+}
+.collabColleagues .colleaguesInfo a, 
+.collabCommunityUsers .communityUsersInfo a {
+word-break: break-all;
+display: block;
+}
+
+.collabColleagues .collabColleaguesButton,
+.collabCommunityUsers .collabCommunityUsersButton {
+    top: 15px;
+}
+
+/*datatable dropdown */
+.collabActionDropdownWrap {
+    position: relative;
+}
+.collabFilesWrapper table.dataTable .actionList {
+    width: 75px;
+    overflow: visible;
+
+}
+.collabFilesWrapper table.dataTable .actionDropdown {
+    text-indent: 0;
+
+width: auto;
+
+height: auto;
+
+overflow: visible;
+margin-top: 5px;
+}
+/*.CollabMainPage #FilesDataTable a {
+    text-indent: 0;
+
+width: auto;
+
+height: auto;
+}*/
+.collabFilesDropdownDiv{
+    left: 0;
+
+right: auto;
+
+top: 30px;
+}
+
+
+#CollabShareModal .postTo > div > a:hover, #CollabShareModal .postTo > div > a:focus, #CollabShareModal .postTo > div > a:active, .collabWrapper .postTo > div > a:hover, .collabWrapper .postTo > div > a:focus, .collabWrapper .postTo > div > a:active {
+    background-color: #E2EFFD !important;
+} 
+.collabWrapper .postTo .arrowKey,
+.collabWrapper .postTo .focusItem {
+    display: block;
+}
+
+.CollabMainPage .collabFeedWrapper .initialPost.media-body {
+    padding-left: 55px;
+
+}
+.CollabMainPage .fileBlock .focusItem {
+    display: block;
+
+float: none;
+}
+.collabFeedWrapper .feedItem .moreCommentActions,
+.collabFeedWrapper .feedItem .moreActions > div:first-child > a {
+    background-position:  73px -1836px !important;  
+}
+
+.collabWrapper .whoSeeWrap {
+    position: relative;
+    margin: 0 0 0 10px;
+}
+.collabWrapper .whoSeeWrap div.whoSeeCarrot {
+    left: 0;
+    top: 100%;
+}
+.collabWrapper .whoSeeWrap a.whoSee {
+    margin: 0;
+}
+.collabWrapper .whoSeeWrap .whoSeeHiddenDiv {
+    top: 30px;
+    left: -70px;
+
+}
+
+#CollabPreviewModal {
+    overflow: hidden;
+}
+#CollabPreviewModal > div.itemMainDivCls {
+    overflow: auto;
+}
+
+#collabContainer .collabWrapper {
+    padding: 10px;
+}
+.CollabMainPage .collabPanel .top-right-margin {
+    position: static;
+}
+.CollabMainPage .collabGroupView .panel-heading .panel-title {
+    background: transparent !important;
+    border: 0;
+    width: auto;
+    padding-left: 0 !important;
+}
+.CollabMainPage .collabGroupView .panel-heading {
+    padding: 7px 15px !important;
+}
+.CollabMainPage.phase-collab div#PageTemplateApp {
+    padding: 0 !important;
+}
+#collabContainer .collabWrapper > div.post {
+    z-index: 1;
+}
+.isCollapsed #CollabMenu {
+    display: none!important;
+}
+
+.isCollapsed .collabContainer  {
+    padding-left: 0px !important;
+} 
+.CollabMainPage .panel-body#WorkspaceFilesFlexToggle {
+    overflow: hidden;
+} 

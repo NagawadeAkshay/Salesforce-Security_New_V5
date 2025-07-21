@@ -1,0 +1,8 @@
+/* overriding this style (originally coming from bootstrap-addition.css here as it is causing 
+the issue of white space getting displayed betwn the top tab panel and bottom body panel*/
+.navbar:after{
+	display: inline !important;
+} 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}

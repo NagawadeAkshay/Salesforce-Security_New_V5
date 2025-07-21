@@ -1,0 +1,89 @@
+#LoadingPopUpDivModal{height:100%;width:100%;text-align:center;position:fixed;opacity:.7;z-index:100;display:none}.close-ext{opacity:1!important}.wrapper{padding-left:0;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;overflow:hidden}.wrapper.toggled{padding-left:215px;overflow:hidden}.sidebar-wrapper{z-index:1000;position:absolute;left:215px;width:0;margin-left:-215px;overflow-y:auto;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease}.wrapper.toggled .sidebar-wrapper{width:215px}.page-content-wrapper{position:absolute;width:100%;overflow-x:hidden}.xyz{min-width:360px}.wrapper.toggled .page-content-wrapper{position:relative;margin-right:0}.fixed-brand{width:auto}.sidebar-nav{position:absolute;top:0;width:215px;margin:0;padding:0;list-style:none;margin-top:2px}.sidebar-nav li{text-indent:15px;line-height:40px}.sidebar-nav li a{display:block;text-decoration:none}.sidebar-nav li a:hover{text-decoration:none}.sidebar-nav li a:active,.sidebar-nav li a:focus{text-decoration:none}.sidebar-nav>.sidebar-brand{height:65px;font-size:18px;line-height:60px}.sidebar-nav>.sidebar-brand a:hover{background:0 0}.no-margin{margin:0}@media(min-width:768px){.wrapper-sidebar{padding-left:215px}.fixed-brand{width:215px}.wrapper.toggled{padding-left:0}.sidebar-wrapper{width:215px}.wrapper.toggled .sidebar-wrapper{width:215px}.wrapper.toggled-2 .sidebar-wrapper{width:50px}.page-content-wrapper{position:relative;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease}.wrapper.toggled .page-content-wrapper{position:relative;margin-right:0;padding-left:215px}.wrapper.toggled-2 .page-content-wrapper{position:relative;margin-right:0;margin-left:-175px;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;width:auto}}.sidebar-wrapper-ext{position:fixed}.padding-right-0{padding-right:0}.padding-left-0{padding-left:0}.padding-left-4{padding-left:4px!important}.form-footer-true{padding-top:13px;float:left}.form-footer-false{padding-left:5px;float:left}.errorMsg,div.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable{display:none!important}
+.tabYellowDot{
+	border-radius: 50%;
+	margin: 0 0 3px -1px;
+	background : #ff6939;
+	display : none;
+	height:13px;
+	width:13px;
+}
+.fieldMessage {
+   background: transparent;
+    padding: 2px 5px;
+    justify-content: flex-end;
+    display: flex;
+}
+.fieldMessage p {
+    margin: 0;
+    border-left: 1px solid #eee;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.fieldMessage p:first-child {
+    border-left: none;
+}
+
+#myTabs .panel-heading.pageBlockSeparator {
+	width: 100%;
+	margin: 0 15px 10px;
+	border: 1px solid #ddd !important;
+}
+
+.fieldMessage .asterikIcon {
+    margin-right: 4px;
+    font-size: 16px;
+    line-height: 12px;
+    margin-bottom: -8px;
+} 
+.tabYellowDot{
+	border-radius: 50%;
+	margin: 0 0 3px -1px;
+	background : #ff6939;
+	display : none;
+	height:13px;
+	width:13px;
+}
+.checBoxAlignment label,
+.radioClass label {
+                font-weight: 300;
+                padding: 0 5px;
+                font-size: 12px;
+                color: #000;
+                margin: 0
+}
+.checBoxAlignment tr:nth-of-type(even),
+.checBoxAlignment tr:nth-of-type(odd),
+.radioClass tr:nth-of-type(even),
+.radioClass tr:nth-of-type(odd),
+.checBoxAlignment tr:hover,
+.radioClass tr:hover {
+                background: transparent!important
+}
+
+.checBoxAlignment td,
+.radioClass td {
+                display: flex;
+                align-items: center
+}
+
+.checBoxAlignment input[type=checkbox],
+.checBoxAlignment input[type=radio],
+.radioClass input[type=checkbox],
+.radioClass input[type=radio] {
+                margin: 0;
+                min-width: 15px;
+                min-height: 15px;
+}
+.multiselectCheckbox fieldset {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.multiselectCheckbox.checBoxAlignment td {
+align-items: flex-start;
+margin-bottom: 3px;
+word-break: break-word;
+} 
+

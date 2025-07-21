@@ -1,0 +1,22 @@
+		@page {
+            size: letter;
+            margin: 25mm;
+            @top-center {
+                content: "Organization Hierarchy";
+            }
+           
+            @bottom-center {
+                content: "Page " counter(page) " of " counter(pages);
+            }
+            @top-left {
+              background-image: url('GovGrantsLogo.png'); 
+			  background-repeat:no-repeat;
+            }
+        }
+        .page-break {
+            display:block;
+            page-break-after:always;
+        }
+        body {
+            font-family: Arial Unicode MS;
+        }

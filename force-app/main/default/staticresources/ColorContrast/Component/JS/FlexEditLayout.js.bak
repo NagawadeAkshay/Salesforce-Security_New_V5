@@ -1,0 +1,384 @@
+var j$ = jQuery.noConflict(); 
+function redirectTo(sUrl) { 
+	window.location = sUrl; 
+} 
+function newWindow(sUrl) {	
+	window.open(sUrl);
+}
+function showModalTitle(modalTitle) {
+	if (modalTitle == null) {
+		modalTitle = '';
+	}
+	modalTitle = modalTitle.replace('<br />', ' - ');
+	modalTitle = modalTitle.replace('<br/>', ' - ');
+	j$("#modalLabel").text(modalTitle);
+}
+function executeClassOrURL(actionId, url,className){	
+	if(url != ''){
+	   redirectTo(url);
+	}
+	else if(className != ''){		
+		//Comment out on behalf of Eswari
+		//alert('calling action class ' + className +  ' with actionId: ' + actionId);
+		executeClass(className, actionId);
+	} 
+	/*console.log('parent flex overlay close', parent);
+	if(parent != undefined && parent != null){
+		parent.closeFlexModal();
+	} */ 
+} 
+
+function buttonOnClickAction(buttonId, url, className, showModal, height, width, title, warningMsg){	
+	//fetchRecord(); 	
+	var isDelete = false,confirmStatus = '';
+	var isSubmitWarning = false;
+	var deleteMessage = flexEditLayout_DeleteConfirmLabel;
+	if(warningMsg != ''){
+	   confirmStatus = confirm(warningMsg); 
+	   isSubmitWarning = true;
+	}	
+	else if(title.toLowerCase() == 'delete'){
+		confirmStatus = confirm(deleteMessage);
+		isDelete = true;
+	}	
+	if(!isSubmitWarning || (isDelete == true && confirmStatus == true) || (isSubmitWarning == true && confirmStatus == true)){//(isDelete==false && confirmStatus == false) ||
+		showModal = showModal.trim();		
+		if(showModal == 'true' || showModal == true){ 
+				if(height == '' || height == null){
+					height = '400';
+				}
+				if(width == '' || width == null){
+					width = '500';  
+				}
+				j$('#dynamicActionModalDiv').modal();
+				j$('#iframeActionModalId').attr('src',url);
+				j$('#iframeActionModalId').attr('height',height);
+				j$('#iframeActionModalId').attr('width',width);
+				var style = 'height:'+(parseInt(height)+30).toString()+'px !important; width:'+(parseInt(width)+30).toString()+'px !important;';
+				j$('#modalDialog').attr('style',style);
+				j$('#modalBody').attr('style',style);
+				j$('#modalTitle').text(title);
+				console.log('showModal end');               
+			}else{
+				if(title.toLowerCase() == 'edit'){
+					if(url.indexOf('saveURL') == -1 && url.indexOf('DynamicEditLayout') != -1){
+						if(url.indexOf('?') == -1){
+							url = url + '?saveURL='+encodeURIComponent('/apex/DynamicViewLayout?id='+flexEditLayout_rcrdId+'&template='+flexEditLayout_tmplName);
+						}else{
+							url = url + '&saveURL='+encodeURIComponent('/apex/DynamicViewLayout?id='+flexEditLayout_rcrdId+'&template='+flexEditLayout_tmplName);
+						}
+					}
+				}				
+				executeClassOrURL(buttonId, url, className);
+			}
+	 }
+}
+
+/* function saveRecordOnButtonClickJS(url, className, showModal, height, width, title, warningMsg){
+var success;
+   success = saveRecordOnButtonClick(url, className, showModal, height, width, title, warningMsg);
+   success = true;
+   console.log('success---',success);
+	if(success){
+	buttonOnClickAction(url, className, showModal, height, width, title, warningMsg);
+	}
+}*/
+function closeModal(){
+	j$('#dynamicActionModalDiv').addClass('fade ');
+	j$('#dynamicActionModalDiv').css('display', 'none');
+	j$('#dynamicActionModalDiv').attr('aria-hidden', 'true');
+}
+//temp for form navigation toggle mode
+function newnavigation(isError) {
+	if(isError) {
+		hideLoadingPopUp();		
+		isError = false;		
+	} else {		 
+		 var Id = flexEditLayout_CurrentPageId;
+		 var formId = flexEditLayout_CurrentPageformId;
+		 var packageId = flexEditLayout_CurrentPagepackageId;
+		 var parentId = flexEditLayout_CurrentPageparentId;
+		 var parentLayoutId = flexEditLayout_CurrentPageparentLayoutId;
+		 var templateName = flexEditLayout_CurrentPagetemplateName;              
+		 var formtype = flexEditLayout_CurrentPageformTypes;
+		 var pageUrl = 'DynamicFormView?formTypes='+ formtype +'&formId='+ formId +'&id='+ Id +'&packageId='+ packageId +'&parentId='+ parentId +'&parentLayoutId='+ parentLayoutId +'&templateName='+ templateName + '&isFormSaved=true';
+		 window.open(pageUrl,'_self');
+	}   
+}
+
+var lastClickedTabId; 
+var pageLayoutId,recordTypeId,recordTypeName;
+function saveSelectedRecordId(pageLayout,recordType,rtName){
+	//saveRecordTypeId(name);
+	var nextBtnID= document.getElementById('nextId');
+	j$(nextBtnID).removeClass("customDisableBtn");
+	j$(nextBtnID).addClass("btn");
+	nextBtnID.disabled = false;
+	pageLayoutId = pageLayout;
+	recordTypeId = recordType;
+	recordTypeName = rtName;
+}
+
+function cancelOperation(){
+	var url = flexEditLayout_CurrentPageretURL;
+	window.open(url,'_self');
+}
+
+function saveSelectionJS(){	
+	if(pageLayoutId){
+		saveSelection(pageLayoutId, recordTypeId, recordTypeName);
+	}
+}
+
+function redirect(url){
+	j$('#RedirectLoader').show();
+	console.log(url);
+	if (url != '') {
+		window.open(url,'_self');
+	} else {
+		j$('#RedirectLoader').hide();
+	}
+}
+        
+function setPageTitle(myPageTitle) {
+	pageTitleName = myPageTitle;
+}
+
+function setCookie(tabId,tabName){
+	if(lastClickedTabId != ''){ // Tanmay
+		j$('#'+lastClickedTabId).parent().removeClass('active');               
+	}	                 
+	var rcrdId = flexEditLayout_CurrentPageId;
+	j$.cookie(flexEditLayout_objectName, tabId+':'+rcrdId,{path: '/'});
+	j$.cookie(flexEditLayout_objectName+'-Name', tabName+':'+rcrdId,{path: '/'});
+	var topBarOrDropDownFlag = j$('#'+tabId).parent().parent().attr('id');	
+	if(topBarOrDropDownFlag == 'tabDropDownMenuBar'){
+		j$('#tabDropDownMenuBar').append(j$('#topTabsID').children().last().prev());
+		//j$('#topTabsID').append(j$('#'+tabId).parent());
+		j$('#topTabsID').children().last().before(j$('#'+tabId).parent());
+	}
+	lastClickedTabId = tabId;
+}
+        
+function setPageHeaderTitle(){
+	if(flexEditLayout_parentLytId == null || flexEditLayout_parentLytId == 'Undefined' || flexEditLayout_parentLytId == ''){
+		var pageHeader1 = flexEditLayout_pageHeader.replace('<br />', '</span><br /><span class="overview-title">');
+		j$('#pageHeaderId').html('<div class="overviewHeader"><span class="customLabelstyle">'+pageHeader1+'</span></div>');  
+	
+	}
+	else if(flexEditLayout_parentLytId != null || flexEditLayout_parentLytId != 'Undefined' || flexEditLayout_parentLytId != ''){
+		var pageHeader1 = flexEditLayout_pageHeader.replace(" - ", "<br />");		
+		j$('#pageHeaderId').html(pageHeader1);
+	}
+}
+        
+function sideBarHeightUI() {	
+/*	var headerDivHeight = j$(window).height();
+	var screenHeight = window.innerHeight;;
+	var navBarHeight = j$('.navbar').height();
+	var sidebarHeight = 100-((navBarHeight/screenHeight)*100);
+	j$('#sidebar-wrapper').css('height',sidebarHeight-5+'%'); */
+	var headerDivHeight = j$(window).height();
+	var screenHeight = window.innerHeight;
+	var navBarHeight = j$('nav.navbar.navbar-default.navbar-fixed-top .container-fluid').height();	
+	/*var sidebarHeight = 100-((navBarHeight/screenHeight)*100);	
+	j$('#sidebar-wrapper').css('height',sidebarHeight-5 +'%'); */
+	
+	console.log('headerDivHeight: ',headerDivHeight);
+	console.log('screenHeight: ',screenHeight);
+	console.log('navBarHeight: ',navBarHeight);
+	
+	var sidebarLogoHeight = j$('#sidebar-logo-wrapper').height();
+	console.log('sidebarLogoHeight :',sidebarLogoHeight);
+	var sidebarHeight = screenHeight-navBarHeight-sidebarLogoHeight;	
+	console.log('sidebarHeight: ',sidebarHeight);
+	j$('#sidebar-wrapper-logo').css('height',sidebarHeight+'px');
+}
+        
+j$(document).ready(function(){ 
+	setPageHeaderTitle();
+	setPageTitle(flexEditLayout_setPageTitle);
+	var layout = flexEditLayout_layoutType;
+	lastClickedTabId = '';
+
+	/*changed Anuja  : 06_05_2016 hardcoded the value*/
+
+	if(layout == 'Edit'){
+		//var textElement = j$("<span class=\'requiredFieldMessage'\ ></span>"); /* UI-Shrawan-10092015 Removed inline style */
+		//textElement.text("{!$Label.FieldsMarkedRequired}");
+		var textElement = j$("<span class=\'pull-right padding-left-4'\ >are required </span><span class=\'pull-right color-red padding-left-4'\>*</span><span class=\'pull-right'\>Fields marked as </span>"); /* UI-Shrawan-10092015 Removed inline style */
+		j$("#requiredMessage").append(textElement);                                
+	}
+
+	var aHref = j$( "span[customId^='005'] a" );	
+	for(var i=0;i<aHref.length;i++){	
+		var n = aHref[i].href.lastIndexOf('/');	
+		var idn = aHref[i].href.substring(n+1);		
+		aHref[i].href = '/apex/' + flexEditLayout_namespace +'ProfileRedirect?id='+idn;            
+	}	
+	//
+	var newTabHTML = '';
+	var tabsMaxWidth = j$('#topTabsID').width() - 50;                
+	var allTabsLength = j$('#topTabsID').find('li').length;		
+   
+	var tempTabsLength = 0; 
+	var plusTab1 = '<li class="listyle"><a class="dropdown-toggle" href="#" tabindex="0" id="tabDropDownMenu" data-toggle="dropdown" title="More Tabs"><span class="fa fa-plus"></span><span class="hidden">More Tabs</span></a><ul id="tabDropDownMenuBar" class="dropdown-menu dropdown-menu-right" aria-labelledby="tabDropDownMenu" style="width: auto;">';
+	var plusTab2 = '</ul></li>';
+	var withinMaxWidth = true;
+	for(var i=0;i<allTabsLength;i++){
+		if(j$(j$('#topTabsID').find('li')[i]).attr('style') == "" || j$(j$('#topTabsID').find('li')[i]).attr('style') == undefined){
+			tempTabsLength += j$(j$('#topTabsID').find('li')[i]).width();
+		}		
+		if(tempTabsLength >= tabsMaxWidth){  
+			if(withinMaxWidth) {             
+				newTabHTML += plusTab1;   
+				withinMaxWidth = false;
+			}                                                                
+			newTabHTML += j$(j$('#topTabsID').find('li')[i]).prop('outerHTML'); 			
+			if(i == allTabsLength-1){
+				newTabHTML += plusTab2;
+				j$('#topTabsID').empty();
+				j$('#topTabsID').append(newTabHTML);
+			}                                   
+		}else{
+			newTabHTML += j$(j$('#topTabsID').find('li')[i]).prop('outerHTML');
+		}
+	}            
+	//
+	var recId = flexEditLayout_CurrentPageId.substring(0,3);
+	j$.cookie('apex__objectID', recId , {path: '/'});	
+	var tabId;
+	var tabName;
+	if(flexEditLayout_objectName != ''){
+		tabId = j$.cookie(flexEditLayout_objectName);
+		tabName = j$.cookie(flexEditLayout_objectName+'-Name');
+	}	
+	noMatch = true;
+	if(tabId){ 
+		var res = tabId.split(":");		
+		var rcrdId = flexEditLayout_CurrentPageId;		
+		if(res[1] == rcrdId){ 
+			var tabVal = j$('.nav-tabs a[id='+res[0]+']');			
+			if(tabVal.length > 0){
+				tabVal.tab('show');
+				noMatch = false;
+			}else{
+				if(tabName){
+					var res = tabName.split(":");					
+					var name = '\'' + res[0] + '\'';
+					var tabVal = j$('.nav-tabs a[name='+name+']');
+					if(tabVal.length > 0){
+						tabVal.tab('show');
+						noMatch = false;
+					}
+				}
+			}
+			var topBarOrDropDownFlag = j$('#'+res[0]).parent().parent().attr('id');			
+			if(topBarOrDropDownFlag == 'tabDropDownMenuBar'){
+				j$('#tabDropDownMenuBar').append(j$('#topTabsID').children().last().prev());
+				//j$('#topTabsID').append(j$('#'+tabId).parent());
+				j$('#topTabsID').children().last().before(j$('#'+res[0]).parent());
+			}
+			
+		}
+	}
+	if(noMatch == true){                
+		var firsTabId; //= j$('#topTabsID').find('li:visible:first').children().tab('show');//
+		if(flexEditLayout_activeTabSize) {
+			if(j$('#topTabsID a:first').is(':visible') == true || flexEditLayout_activeTabSize == '1'){
+				j$('#topTabsID a:first').tab('show');
+				firstTabId = j$('#topTabsID a:first').attr('id');                
+			}
+			else{
+				j$('#topTabsID').find('li:visible:first').children().tab('show');
+				firsTabId = j$('#topTabsID').find('li:visible:first').children().attr('id');
+			}
+			var rcrdId = flexEditLayout_CurrentPageId;
+			j$.cookie(flexEditLayout_objectName, firsTabId+':'+rcrdId ,{path: '/'});			
+		}
+		}
+		adjustToggleBarHeightUI(); /* UI-Shrawan-10102015 */   
+		sideBarHeightUI();
+		j$(window).on('resize', function() {               
+			sideBarHeightUI();
+		});				 
+});        
+		
+var isInternalDoc = 'false';
+var docId = '';
+var helpId = flexEditLayout_HelpConfig;
+var namespace = flexEditLayout_namespace;
+var j$= jQuery.noConflict();
+if(j$.cookie('setup') == 'present' && flexEditLayout_enableNativeLayout) {
+	j$(".pageLayoutSetupIcon").show();
+	j$("#ViewNativePageLayoutId").show();
+}
+else{
+	j$(".pageLayoutSetupIcon").hide();
+	j$("#ViewNativePageLayoutId").hide();
+}
+ 
+function fetchHelpDataJS(){	
+	Visualforce.remoting.Manager.invokeAction(
+		_RemotingFlexEditLayoutActions.fetchHelpDataRemote,helpId,
+		function(result, event){
+			if (event.status) {
+				isInternalDoc = result.isInternalDocument;
+				docId = result.docId;
+			}
+		});
+}
+function selectlistChange(value) {	
+	var check = confirm('Your data is not saved. Do you want to procced?');
+	if(check == true) {
+		showLoadingPopUp();
+		navigationForms('',value);
+	}
+}       
+
+function navigationForms(value,selectedValue) {	 
+	var url = flexEditLayout_CurrentPageURL;     
+	if(selectedValue!='None'){  
+		Visualforce.remoting.Manager.invokeAction(
+			  _RemotingFlexEditLayoutActions.navForms1,url,value,selectedValue,                                    
+					  function(result,event){                          
+						  if(event.status){
+							  console.log('success',event);
+							  var urlnew = decodeURIComponent(result);                                                                    
+							  window.open(decodeURIComponent(result),'_self');   																						 
+						  }else{							  
+							  console.log('result------->>>>',result);
+						  }                                                      
+				  },                         
+			  {escape:true}
+			  );
+	}
+}
+function closeIframe(hasErrors){
+	if(!hasErrors) {
+		j$(window.frameElement).parent().parent().prev().find('.flexDismiss').click();
+	}
+}
+function openHelp(){
+	if(isInternalDoc == 'true' ){
+		window.open('/servlet/servlet.FileDownload?file='+docId,'_blank');
+	}else{
+		window.open('/apex/'+namespace+'Help?id='+helpId, '_blank','width=900, height=700');
+	}
+}    
+ j$(document).ready(function(){
+	fetchHelpDataJS();
+	/*Code for making custom lookup modal draggable Start*/
+	j$("#customLookupModalDiv").draggable({
+		handle: ".modal-header",
+		iframeFix: false,
+		refreshPositions: true
+	});
+	/*Code for making custom lookup modal draggable End*/	
+ });
+ function takeSnapshot(){
+	var confirmVal = confirm('You are taking snapshot saved as attachment, do you want to proceed'); 
+	if(confirmVal == true){
+		executeClass('GGDemo2.MenuSnapshotHelper', '');
+	}
+}

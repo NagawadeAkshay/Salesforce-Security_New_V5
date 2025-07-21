@@ -1,0 +1,49 @@
+.comment {
+	width: 600px;  
+	margin: 10px;
+}
+.read-more {
+	text-decoration:none;	
+	cursor: pointer;
+}
+.read-less {
+	text-decoration:none;	
+	cursor: pointer;
+}
+.morecontent span {
+	display: none;
+
+}
+.collapseSidebarUI {
+	height: 0px;
+}
+#LoadingPopUpDiv{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	opacity: 0.7;
+	z-index: 100;
+	display: none;
+}
+ a.skip-main {                       /*<!-- For 508 SkipNavigation  -->*/
+    height: 20px;
+	width: 150px;
+    position: absolute;
+    z-index: 9999999;
+    top: -250px;
+    left: -250px;
+}
+a.skip-main:focus, a.skip-main:active {   
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    text-align:center;
+    font-size:1.2em
+    z-index:999;
+}

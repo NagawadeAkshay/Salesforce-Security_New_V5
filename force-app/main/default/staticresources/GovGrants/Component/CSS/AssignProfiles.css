@@ -1,0 +1,44 @@
+.bs.container-fluid {
+	margin: 10px;
+}
+.panel-heading-title {
+	float: none;
+}
+.panel-heading {
+	position: relative;
+}
+#MultiselectPanel {
+	width: 520px;
+}
+.selectCell:first-child {
+	margin-left: 10px;
+}
+.selectCell {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.multiList > option {
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#LeftList,
+#RightList {
+	width: 200px;
+} 
+.buttonCell {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 50px;
+}
+.buttonCell > div {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.buttonCell > div > a:hover {
+	cursor: pointer;
+}
+.saveContainer {
+	position: absolute;
+	right: 10px;
+	top: 8px;
+}

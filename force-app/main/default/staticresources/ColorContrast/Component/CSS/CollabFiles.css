@@ -1,0 +1,47 @@
+#CollabFileUploadModal #UploadCollabFileHidden{!identifier} {
+	display: none;
+}
+#UploadNewVersionButton{!identifier} {
+	float: right;
+	margin-bottom: 10px !important;
+}
+.collabFilesWrapper > div:first-child .collabDialogHeading #FilesSearchCancelButton{!identifier} {
+	position: absolute;
+	top: 33px;
+	right: 15px;
+}
+.collabFilesWrapper > div:first-child .collabDialogHeading #FilesSearchButton{!identifier} {
+	position: absolute;
+	top: 33px;
+	right: 89px;
+}
+.collabFilesWrapper > div:first-child .collabDialogHeading #FilesSearchText{!identifier} {
+	position: absolute;
+	right: 174px;
+	top: 36px;
+	color:#ccc;
+}
+.collabFilesWrapper > div:first-child .collabPanelHeading #FilesSearchCancelButton{!identifier} {
+	position: absolute;
+	top: 5px;
+	right: 85px;
+}
+.collabFilesWrapper > div:first-child .collabPanelHeading #FilesSearchButton{!identifier} {
+	position: absolute;
+	top: 5px;
+	right: 159px;
+}
+.collabFilesWrapper > div:first-child .collabPanelHeading #FilesSearchText{!identifier} {
+	position: absolute;
+	right: 245px;
+	top: 8px;
+	color:#ccc;
+}
+.collabFilesWrapper > div:first-child #FilesSearchText{!identifier}.textFieldActive{
+	color:#000;
+}
+.collabFilesWrapper #UploadCollabFile{!identifier} {
+	position: absolute;
+	right: 15px;
+	top: 5px;
+}

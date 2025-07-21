@@ -1,0 +1,76 @@
+.chartContainer {
+	height:195px; 
+} 
+.nonPhaseHeight{
+	height :255px !important;
+}
+.donutContentClass{
+	margin: 0 0 1em;
+	-webkit-transform: translateX(4.5em) translateY(1.5em); 
+	-moz-transform:    translateX(4.5em) translateY(1.5em); 
+	-ms-transform:     translateX(0.5em) translateY(1.4em) !important; 
+	-o-transform:      translateX(4.5em) translateY(1.5em); 
+	transform:         translateX(4.5em) translateY(1.5em);     
+}
+.donutHorizontalContentClass{
+	margin: 0 0 1em;
+	-webkit-transform: translateX(0em) translateY(2em); 
+	-moz-transform:    translateX(0em) translateY(2em); 
+	-ms-transform:     translateX(0em) translateY(2em); 
+	-o-transform:      translateX(0em) translateY(2em); 
+	transform:         translateX(0em) translateY(2em);     
+}
+.donutHeaderClass{
+	font: 13px 'Open Sans',sans-serif;
+	font-weight:bold;
+	color: #000000;
+	padding: .7em;
+	margin: 0;
+	line-height: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1000%;
+	-webkit-transform: rotate(90deg) translateX(20px); 
+	-moz-transform:    rotate(90deg) translateX(20px);
+	-ms-transform:     rotate(90deg) translateX(20px);
+	-o-transform:      rotate(90deg) translateX(20px); 
+	transform:         rotate(90deg) translateX(20px); 
+	-webkit-transform-origin: 2.0em .5em;
+	-moz-transform-origin:    2.0em .5em;
+	-ms-transform-origin:     2.0em .5em;
+	-o-transform-origin:      2.0em .5em;
+	transform-origin:         2.0em .5em;
+}
+
+
+.donutHorizontalHeaderClass{
+	font: 13px 'Open Sans',sans-serif;
+	font-weight:bold;
+	color: #000000;
+	padding: .7em;
+	margin: 0;
+	line-height: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.marginBottomForPhaseTrue{
+	margin-bottom: 20px;
+}
+
+.enhancedViewChartContainerHeight{
+	height : 600px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	overflow: visible !important; 
+}  
+.chartTitle {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 240px;
+	display: inline-block;        
+}

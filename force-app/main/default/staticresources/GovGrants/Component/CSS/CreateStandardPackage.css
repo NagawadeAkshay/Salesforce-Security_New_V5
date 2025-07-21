@@ -1,0 +1,17 @@
+.modal-open {
+	overflow: visible;
+}
+.panel-header-height {
+	height: 35px !important;
+}
+.panel-heading {
+	padding: 5px 15px;
+}
+.panel-heading-title h2 {    	
+	margin: 5px;
+}
+.column-lists-left, .column-lists-right { 
+	width: 50%;
+	display: inline-block;
+	float: left; 
+}

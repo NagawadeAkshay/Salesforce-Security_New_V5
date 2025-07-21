@@ -1,0 +1,508 @@
+.collabModal label,
+.groupFeed label,
+.groupSidebar label {
+	position: absolute !important;
+	top: -99999px !important;
+	left: -99999px !important;
+	display: block;
+}
+.groupFeed {
+	overflow: hidden;
+}
+.collabModal {
+	display: none;
+}
+.collabModal.active {
+	display: block;
+}
+.collabHidden {
+	position: absolute !important;
+	top: -99999px !important;
+	left: -99999px !important;
+}
+.externalUserFlag {
+	position: absolute;
+	height: 12px !important;
+	background: transparent url({!urlfor($Resource.CollabSprites, 'CollabSprites/collabAvatarSprite.png')}) no-repeat 0px -40px;
+}
+.collabLock {
+	position: absolute;
+	bottom: -1px;
+	right: -1px;
+	width: 12px !important;
+	height: 12px !important;
+	background: #FFF url({!urlfor($Resource.CollabSprites, 'CollabSprites/collabLocksAndKeys.png')}) no-repeat -2px -1px;
+}
+#GroupContainer {
+	display: none;
+}
+.groupSidebar {
+	width: 200px;
+	margin-right: 15px;
+}
+.groupLeftSidebar {
+	padding-left: 15px;
+	float: left;
+}
+.groupSidebar > div {
+	margin-bottom: 10px;    
+}
+.groupLeftSidebar .customerSticker {
+	position: absolute;
+	height: 20px;
+	background: transparent url({!urlfor($Resource.CollabSprites, 'CollabSprites/collabAvatarSprite.png')}) 0px 0px;
+}
+.groupLeftSidebar .editInfo {
+	height: 12px;
+	width: 12px;
+	padding: 3px;
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 36px;
+	background: url({!urlfor($Resource.GovGrantsExternal, 'Feedback/css/icons.png')}) no-repeat -19px -96px;
+}
+.groupLeftSidebar div {
+	overflow: hidden;
+	word-break: break-word;   
+}
+.groupLeftSidebar > .groupPhoto {
+	position: relative;   
+}
+.groupLeftSidebar > .groupPhoto > img {
+	//width: 183px;
+	border-radius: 95px;
+}
+#UploadPhotoHidden {
+	display: none;    
+}
+.groupLeftSidebar > .groupPhoto > .photoOptions {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 200px;
+	z-index: 3;
+	text-align: center;
+	height: 18px;
+	margin-bottom: -1px;
+	line-height: 18px;
+}   
+.groupLeftSidebar > .groupPhoto > .photoOptions .background {
+	height: 18px;
+	width: 200px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: -1;
+}
+.groupLeftSidebar .groupSettingsDiv {
+	padding-bottom: 5px;
+}
+.groupLeftSidebar .emailSettingsDiv {
+	padding-bottom: 5px;
+}
+.groupLeftSidebar .groupSettingsDiv .groupSettings {
+	padding-left: 20px;
+	background: url({!urlfor($Resource.CollabSprites, 'CollabSprites/collabGroupSettingsSprites.png')}) no-repeat 0px -0px;
+}
+.groupLeftSidebar .emailSettingsDiv > .emailSettings {
+	padding-left: 20px;
+	background: url({!urlfor($Resource.CollabSprites, 'CollabSprites/collabGroupSettingsSprites.png')}) no-repeat 0px -18px;
+}
+.groupLeftSidebar .emailSettingsDiv + div {
+	position: absolute;
+	width: 171px;
+	top: 34px;
+	margin-top: -23px;
+	padding: 3px 0 5px;
+	left: -10px;
+	border-radius: 5px !important;
+	display: none;
+}
+.groupLeftSidebar .emailSettingsDiv + div.active {
+	display: block;
+}
+.groupLeftSidebar .emailSettingsDiv + div > a:first-child {
+	background: url({!urlfor($Resource.CollabSprites, 'CollabSprites/collabGroupSettingsSprites.png')}) no-repeat 4px -15px;
+}
+.groupLeftSidebar .emailSettingsDiv + div > a {
+	border-radius: 11px;
+	text-decoration: none;
+	padding: 4px 16px;
+	margin: 0 4px;
+	padding-left: 24px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	display: block;
+	position: relative;
+}
+.groupLeftSidebar .emailSettingsDiv + div > a > i {
+	display: none;
+	position: absolute;
+	left: 6px;
+}
+.groupLeftSidebar .emailSettingsDiv + div > a > i.active {
+	display: block;
+}
+.groupRightSidebar {
+	float: right;
+	margin-left: 15px;    
+}
+.groupRightSidebar .pendingRequests,
+.groupRightSidebar .addMembers,
+.groupRightSidebar .changeRoles,
+.groupRightSidebar .removeMembers {
+	margin-top: 5px;
+	font-weight: bold;
+	clear: both;
+}
+.groupRightSidebar .memberPicture {
+	padding-right: 5px;
+	padding-bottom: 5px;
+	float: left;
+	position: relative;
+}
+.groupRightSidebar .memberPicture > a {
+	display: block;
+	position: relative;
+	overflow: visible;
+}
+.groupRightSidebar .memberPicture > a > img {
+	width: 30px;
+	height: 30px;
+}
+.groupRightSidebar .pendingRequests {
+	border-radius: 3px !important;
+}
+.groupLeftSidebar > div:first-child {
+	//border: 1px solid #ccc;
+	padding: 0px;
+	padding-top: 5px;
+}
+.groupSidebar .groupName {
+	font-weight: bold;
+	font-size: 14px;   
+}
+.groupSidebar .groupName + div {
+	position: relative;   
+	overflow: visible;
+}
+.groupSidebar .groupSubheader {
+	margin-bottom: 2px;
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding-right: 8px;
+	width: 100%;
+	clear: both;
+}
+
+.groupSidebar .groupSubheader > a {
+	font-weight: normal;   
+}
+.groupSidebar .groupSubheader > span {
+	display: block;
+	float: left;
+}
+.groupSidebar > div > div a {  
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+}
+.groupLeftSidebar + form > span > div {
+	float: left;
+	width: 750px;
+}
+.showAllMembers,
+.showAllFiles {
+	float: right;   
+}
+.groupRightSidebar div.file > a,
+#ShowAllGroupModal > ul.groupModalList > li.file > a {
+	padding-left: 20px;
+	height: 16px;
+	background: url({!urlfor($Resource.CollabSprites, 'CollabSprites/collabSmallExtensionImages.png')}) no-repeat 0px 0px;
+}
+#ShowAllGroupModal > ul.groupModalList {
+	margin: 0px;
+	list-style-type: none;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	float: left;
+	margin-bottom: 30px;
+	position: relative;
+	width: 100%;
+}
+#ShowAllGroupModal > ul.groupModalList > li {
+	padding-bottom: 5px; 
+	float: left;
+}
+#ShowAllGroupModal > ul.groupModalList > li.entry {
+	padding-top: 5px;    
+	width: 100%;
+	border-bottom: 1px solid;
+}
+#ShowAllGroupModal > ul.groupModalList > li > div:first-child {
+	float: left;
+	clear: left;
+	width: 100%;
+}
+#ShowAllGroupModal > ul.groupModalList > li.changeRole > div:first-child,
+#ShowAllGroupModal > ul.groupModalList > li.request > div:first-child {
+	max-width: 400px;
+}
+#ShowAllGroupModal > ul.groupModalList > li.removable > div:first-child,
+#ShowAllGroupModal > ul.groupModalList > li.addable > div:first-child {
+	width: 450px;    
+}
+#ShowAllGroupModal > ul.groupModalList > li > div:first-child > a:first-child {
+	display: block;
+	float: left;
+	width: 34px;
+	position: relative;
+	overflow: visible;
+}
+#ShowAllGroupModal > ul.groupModalList > li > div:first-child > a:first-child > img:first-child {
+	overflow: visible;
+}
+#ShowAllGroupModal > ul.groupModalList > li.removable > div:first-child > a + a,
+#ShowAllGroupModal > ul.groupModalList > li.addable > div:first-child > a + a {
+	width: auto;
+	max-width: 400px;    
+}
+#ShowAllGroupModal > ul.groupModalList > li.changeRole > div:first-child > a + a,
+#ShowAllGroupModal > ul.groupModalList > li.request > div:first-child + div > a {
+	width: auto;
+	max-width: 360px;
+}
+#ShowAllGroupModal > ul.groupModalList > li > div:first-child > a + a {
+	display: block;
+	float: left;
+	padding-top: 7px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: auto;
+	max-width: 250px;
+}
+#ShowAllGroupModal > ul.groupModalList > li > div:first-child + div {
+	float: right;
+	clear: right;
+	margin-right: 10px;
+	margin-top: 8px;
+}
+#ShowAllGroupModal > ul.groupModalList > li.request > div:first-child + div > a {
+	font-weight: 600;
+	margin-right: 5px;
+}
+#ShowAllGroupModal > ul.groupModalList > li.removable > div:first-child + div > a,
+#ShowAllGroupModal > ul.groupModalList > li.request > div:first-child + div > a + a {
+	text-indent: -9999px;
+	display: block;
+	height: 16px;
+	width: 16px;
+	float: right;
+	background: transparent url({!urlfor($Resource.CollabSprites, 'CollabSprites/collabFollowSprite.png')}) no-repeat 0px -54px;
+}
+#ShowAllGroupModal > ul.groupModalList > li.removable > div:first-child + div > a:hover, 
+#ShowAllGroupModal > ul.groupModalList > li.removable > div:first-child + div > a:focus, 
+#ShowAllGroupModal > ul.groupModalList > li.removable > div:first-child + div > a:active,
+#ShowAllGroupModal > ul.groupModalList > li.request > div:first-child + div > a + a:hover,
+#ShowAllGroupModal > ul.groupModalList > li.request > div:first-child + div > a + a:active,
+#ShowAllGroupModal > ul.groupModalList > li.request > div:first-child + div > a + a:focus {
+		background: transparent url({!urlfor($Resource.CollabSprites, 'CollabSprites/collabFollowSprite.png')}) no-repeat 0px -75px; 
+}
+#ShowAllGroupModal > ul.groupModalList > li.addable > div:first-child + div > a {
+	text-indent: -9999px;
+	display: block;
+	height: 16px;
+	width: 16px;
+	float: right;
+	background: transparent url({!urlfor($Resource.CollabSprites, 'CollabSprites/collabFollowSprite.png')}) no-repeat 0px 0px;
+}
+#ShowAllGroupModal > ul.groupModalList > li > .managerHolder > span {
+	display: block;
+	float: left;
+}
+#ShowAllGroupModal > ul.groupModalList > li > .managerHolder > .isManager {
+	display: none;
+	float: left;
+	margin-top: 2px;
+}
+#ShowAllGroupModal > ul.groupModalList > li > .managerHolder > .isManager.active {
+	display: block;
+}
+#ShowAllGroupModal > ul.groupModalList > li > .managerHolder > .loading {
+	height: 12px;
+	width: 12px;
+	margin: 0px;
+	display: none;
+}
+#ShowAllGroupModal > ul.groupModalList > li > .managerHolder > .loading.active {
+	display: block;
+}
+#ShowAllGroupModal > ul.groupModalList img {
+	margin: 2px;
+	height: 30px;
+	width: 30px;
+}
+#ShowAllGroupModal .nextGroupPage {
+	position: absolute;
+	bottom: -25px;
+	right: 6px;
+}
+#ShowAllGroupModal .prevGroupPage {
+	position: absolute;
+	bottom: -25px;
+	left: 6px;
+}
+#ShowGroupFiles a.actionClose {		
+	position: absolute;
+	right: 5px;
+	top: 0px;        
+}
+#GroupSettingsModal > div {
+	float: left;
+	width: 100%;
+}
+#GroupSettingsModal > div > div > div,
+#GroupSettingsModal > div > div > span > div {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+#GroupSettingsModal > div > div:first-child {
+	float: left;
+	width: 150px;
+	font-wieght: bold;
+}
+#GroupSettingsModal > div > div:first-child + div {
+	float: left;
+	width: 500px;
+}
+#GroupSettingsModal > div > div:first-child + div > div + div + div + div.groupArchiveInput {
+	margin-bottom: 2px;
+}
+#GroupSettingsModal .groupVisible,
+#GroupSettingsModal .groupVisible,
+#GroupSettingsModal .groupAllow {
+	position: relative;
+}
+#GroupSettingsModal .groupVisible > span,
+#GroupSettingsModal .groupVisible > span,
+#GroupSettingsModal .groupAllow > span {
+	position: absolute;
+	top: 2px;
+	left: 17px;
+}
+#GroupSettingsModal .requiredBlock {
+	position: absolute;
+	right: 2px;
+	width: 3px;
+	top: 0px;
+	bottom: 1px;
+}
+#GroupSettingsModal .groupName {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	vertical-align: middle;
+	position: relative;
+}
+#GroupSettingsModal .groupNameInput > input {
+	width: 245px;
+}
+#GroupSettingsModal .groupOwner {
+	padding-top: 8px;    
+	margin-bottom: 9px;
+}
+#GroupSettingsModal .groupOwner > span {
+	display: block;
+	float: left;   
+}
+#GroupSettingsModal .groupDescription {
+	padding-top: 43px;
+	padding-bottom: 42px;
+	vertical-align: middle;
+	margin-top: 5px;
+}
+#GroupSettingsModal .groupDescriptionInput > textarea {
+	margin-top: 5px;
+	resize: none;
+	height: 100px;
+	width: 450px;
+}
+#GroupSettingsModal .groupArchive {
+	padding-top: 18px;
+	padding-bottom: 15px;
+	vertical-align: middle;
+}
+#GroupSettingsModal > div > div > div + div + span + div.groupPrivateInputContainer {
+	margin-top: 9px;
+}
+#GroupSettingsModal .groupAllowInput,
+#GroupSettingsModal .groupPrivateInput {
+	padding-top: 3px;
+	margin-bottom: 1px;
+	vertical-align: middle;
+}
+#GroupSettingsModal .buttonContainer {
+	float: right;
+}
+#OwnerSearchInput {
+	margin-left: -1px;
+}
+#GroupSettingsModal .select2-container {
+	padding: 5px;
+	padding-left: 0px;
+	width: 250px;
+	position: relative;
+}
+#GroupSettingsModal .hiddenDiv.select2-search {
+	display: none;
+	padding-right: 17px;
+	padding-left: 0px;
+	position: absolute;
+	width: 245px;
+	top: 30px;
+}
+#GroupSettingsModal .hiddenDiv.active {
+	display: block;
+}
+#EditGroupInformation > div > div:first-child {
+	padding-bottom: 10px;
+}
+#EditGroupInformation > div > div > textarea {
+	width: 460px;
+	resize: none;
+}
+#GroupLoadingModal > div {
+	height: 120px;
+	padding: 10px;
+}
+#GroupLoadingModal img {
+	margin-left: 124px;
+	margin-top: 34px;
+}
+#VerifyModal > div,
+#VerifyDelete > div {
+	padding: 10px;
+	position: relative;
+}
+#VerifyModal > div > input,
+#VerifyDelete > div > input {
+	position: absolute;
+	top: 0px;
+}
+#VerifyModal > div > input.delete,
+#VerifyDelete > div > input.delete {
+	right: 64px;
+}
+#VerifyModal > div > input.closeModal,
+#VerifyDelete > div > input.closeModal {
+	right: 10px;
+}

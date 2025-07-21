@@ -1,0 +1,107 @@
+/* Color Theme Adjustments */
+/* Variables */
+/* Color Theme Adjustments */
+.navbar-inner {
+  background-color: #203d51;
+  border-bottom-color: #106fac;
+}
+.tabColor {
+  background-color: #203d51;
+}
+.container-fluid .panel-default > .panel-heading {
+  background-color: #23b0db;
+  border: 1px solid #5ad2f7;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+.container-fluid .panel-default > .panel-body,
+#body .container-fluid .panel-body {
+  border: 1px solid #5ad2f7;
+}
+#myTabbedContent {
+  border-left: 1px solid #5ad2f7;
+  border-right: 1px solid #5ad2f7;
+  border-bottom: 1px solid #5ad2f7;
+  border-top: 1px solid #5ad2f7;
+}
+.bs .badge {
+  background-color: #203d51 !important;
+}
+.tableHeader {
+  background-color: #81dbf6 !important;
+}
+.tableColumnHeader{
+	color:#203d51 !important;
+}
+#topTabsID li.active a {
+  border-top-color: #203d51;
+  border-left: 1px solid #5ad2f7;
+  border-right: 1px solid #5ad2f7;
+}
+#myTab .active {
+  background-color: #23b0db;
+}
+#myTab .active a {
+  color: #ffffff !important;
+  background-color: #23b0db !important;
+}
+#SideBarMenuApp .container-fluid .panel-default > .panel-heading {
+  background-color: #203d51;
+  border-bottom: 1px solid #5ad2f7;
+}
+#SideBarMenuApp .bs .panel-heading {
+  border-left: 0px !important;
+  border-right: 0px !important;
+}
+#SideBarMenuApp .bs .container-fluid .panel-default > .panel-heading .glyphicon {
+  color: #203d51;
+}
+#SideBarMenuApp .bs .glyphicon {
+  color: #203d51;
+}
+#SideBarMenuApp .tabColor .glyphicon {
+  color: #ffffff !important;
+}
+.searchHeaderCls,
+.headerDivCls {
+  background-color: #203D51 !important;
+}
+.footerDiv {
+  background-color: #1182a4;
+}
+.customBackground {
+  background-color: #637886;
+}
+.customBtn {
+  background-color: #203d51 !important;
+}
+li {
+  list-style: none;
+}
+u {
+    color:#ffffff; text-decoration:none;
+}
+#headerId, #searchHdr { background-color:#203D51;}
+.flexTableHeader { background-color:#81dbf6 !important;}
+/* Top gradient */
+.navbar-inner {
+  background: #266ea0;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #266ea0 30%, #203d51 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #266ea0), color-stop(100%, #203d51));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #266ea0 30%, #203d51 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #266ea0 30%, #203d51 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #266ea0 30%, #203d51 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #266ea0 30%, #203d51 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#266ea0', endColorstr='#203d51', GradientType=0);
+  /* IE6-9 */
+}
+.chartHeaderColor{
+        background: #23b0db;
+}

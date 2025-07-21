@@ -1,0 +1,166 @@
+.tooltipster-noir {
+	border-radius: 0px; 
+	border: 1px solid #2c2c2c;
+	background: #fff;
+	color: #2c2c2c;
+}
+.tooltipster-noir .tooltipster-content {
+	//font-family: 'Georgia', serif;
+	font-size: 14px;
+	line-height: 16px;
+	padding: 8px 10px;
+	width: 98%;
+	word-wrap:break-word;
+}
+
+/* css for calendar icon from datetimepicker*/
+.inner-addon { 
+	float: left;
+	position: relative; 
+}
+
+/* style icon */
+.inner-addon .fa {
+  position: absolute;
+  padding-top: 4px;
+  padding-right: 6px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+
+  
+/* .modal-heading-header {
+padding-left: 5px; padding-top: 5px !important; padding-bottom: 5px !important; display: block !important; width: 100%; 
+border-radius: 0px 0px 0 0 !important; background-color: #57A3D3 !important; color: #FFFFFF !important; }*/
+.no-scroll { overflow: hidden; }
+.modal-heading-header{                       /* change the modal header*/
+	background-color: #2C7FC8 !important;
+	color: #FFFFFF !important; 
+	padding: 10px 15px 10px 15px !important;
+	font-size: 14px;
+}
+.checBoxAlignment label{
+	font-weight: 500 !important;
+	padding: 0px 10px;
+}
+.radioButtonAlignment label{
+	font-weight: 500 !important;
+	padding: 0px 10px;
+}
+.width_100{
+	width: 100%;
+}
+/*div.jHtmlArea { border: solid 1px #ccc; }
+.richTextAlignClass{
+padding-left:10px !important;
+width:95% !important;
+}
+.labelHelpTooltip:hover{
+text-decoration: none !important;
+color:black !important;
+}
+.labelHelpTooltip{
+color:black !important;
+}
+.static-text{
+display: inline;
+padding-top: 3px;
+text-align: right;
+vertical-align: top;    
+}
+.radioClass input[type="radio"],.vertical-radio input[type="radio"]{
+vertical-align: baseline;
+margin-right:4px !important;
+}
+.radioClass label{
+vertical-align: inherit;
+}
+.radioClass td {
+padding-right:5px;
+}
+.checBoxAlignment td{
+padding-right:10px;
+}
+.checBoxAlignment input[type="checkbox"],.vertical-checkbox input[type="checkbox"]{
+vertical-align: baseline;
+margin-right:4px !important;
+}
+.checBoxAlignment label{
+vertical-align: inherit;
+}
+.verticalLabelAlignmentCls{
+width:100% !important; 
+text-align:left !important;
+}
+.customPadding{
+padding: 5px;
+}
+.helpTextPostStyle{
+font-style:italic;
+color:#78787D;
+font-weight:700;
+padding-left:5px;
+}  
+*//*        
+.LEFT_RIGHT {
+display: inline-block;
+width: 49%;
+}*//*
+.column-lists-both .bold-text{
+width: 21% !important;
+}
+.column-lists-both .field-value{
+width: 76% !important;
+word-wrap: break-word;
+}
+.column-lists-both {
+width: 98%;
+}
+.column-lists-both-left-right li{
+width: 50%;
+float: left;
+}
+.column-lists-both-left-right .bold-text{
+width: 44% !important;
+}
+.column-lists-both-left-right .field-value{
+width: 55% !important;
+word-wrap: break-word;
+}
+.helpIcon {
+color: #6ea3d1 !important;
+padding-right: 3px !important;
+}
+.bs .navbar-btn {
+margin-bottom: 8px;
+margin-top: 20px;
+}
+.bs .panel-body {
+padding-top: 5px;
+padding-bottom: 5px;
+}
+.bs .panel-heading {
+padding: 5px 10px;
+}
+.column-lists-right > ul,
+.column-lists-left > ul,
+.column-lists-both > ul {
+padding-left: 5px !important;
+}
+.column-lists-left {
+width: 48% !important;
+}
+.column-lists-right {
+width: 50% !important;
+}
+.column-lists-left .bold-text,
+.column-lists-right .bold-text {
+width: 44% !important;
+}
+.column-lists-left .field-value,
+.column-lists-right .field-value {
+width: 55% !important;
+}*/

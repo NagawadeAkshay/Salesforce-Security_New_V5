@@ -1,0 +1,123 @@
+#chevronBarId {
+            //padding-bottom: 0px !important;
+            padding-bottom: 5px !important;
+}
+ul.chevron {
+            width: 100%;
+            list-style: none;
+            display: inline-table !important;
+            margin-bottom: 0px;
+            margin-left: 9%;
+            margin-bottom: 0px !important;
+}
+ul.chevron li {
+            display: inline;
+}
+ul.chevron li a {
+            display: block;
+            float: left;
+            height: 45px;
+            //background: #3498db;
+            text-align: center;
+            padding: 8px 15px 15px 35px;
+            position: relative;
+            margin: 0 2px 0 0; 
+            font-weight: 500;
+            font-size: 12px;
+            text-decoration: none;
+            
+}
+ul.chevron li a.actor {
+            display: block;
+            float: left;
+            height: 10px;
+            text-align: center;
+            padding: 0px 15px 0px 15px;
+            position: relative;
+            margin: 0 2px 0 0; 
+            font-weight: 600;
+            font-size: 12px;
+            text-decoration: none;           
+}
+
+        ul.chevron li a:hover {
+            text-decoration:none;
+            
+}
+        ul.chevron li a.actor:after {
+            display: none;
+}
+        ul.chevron li a:after {
+            content: "";              
+            position: absolute; 
+            right: -9px; 
+            top: 0;
+            z-index: 1;
+}
+        ul.chevron li a.actor:before{
+            display: none;
+        }
+        ul.chevron li a:before {
+            content: "";              
+            position: absolute; left: 0; top: 0;
+        }
+                
+ul.chevron li span {
+            display: block;            
+            padding: 0px 0 0 0;
+            font-size: 12px;
+            font-weight: 500;
+}
+ul.chevron li i{
+            display: block !important;
+}
+
+ul.chevron li a.actor span{
+    overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  max-width:100%;
+  display:block;  
+ }
+
+        ul.chevron[data-chevron-steps="1"] li a{ width: 19%; }
+        ul.chevron[data-chevron-steps="2"] li a{ width: 25%; }
+        ul.chevron[data-chevron-steps="3"] li a{ width: 24%; }
+        ul.chevron[data-chevron-steps="4"] li a{ width: 21%; }
+        ul.chevron[data-chevron-steps="5"] li a{ width: 15%; }
+        ul.chevron[data-chevron-steps="6"] li a{ width: 9.7%; }
+        ul.chevron[data-chevron-steps="7"] li a{ width: 8.3%; }
+        ul.chevron[data-chevron-steps="8"] li a{ width: 7.3%; }
+        ul.chevron[data-chevron-steps="9"] li a{ width: 6.3%; }
+
+        @media only screen and (min-width:200px) and (max-width:768px) {
+
+            
+            #chevronBarId {
+                padding: 0px;
+                margin-left: -30px;
+                }
+                ul.chevron[data-chevron-steps="3"] li a {
+                width: 30%;
+                
+                }
+                ul.chevron {
+                width: 100%;
+                list-style: none;
+                display: inline-table !important;
+                padding: 0px;
+                }
+                ul.chevron li a {
+                display: block;
+                float: left;
+                height: 45px;
+                background: #3498db;
+                padding: 8px 5px 5px 15px;
+                position: relative;
+                margin: 0 3px 0 0;
+                font-weight: 500;
+                font-size: 10px;
+                text-decoration: none;
+                }
+            
+            }

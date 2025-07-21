@@ -1,0 +1,6 @@
+#CollabNewGroupModal .groupPrivateInput.addPadding {
+	margin-top: 4px;
+}
+#CollabNewGroupModal .groupVisible > span.addPadding {
+	margin-top: 1px;
+}

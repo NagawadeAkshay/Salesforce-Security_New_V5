@@ -1,0 +1,46 @@
+.panel-heading.relativePanel { 
+	position: relative;
+}
+.headerDescCls {
+	padding-top: 1px;
+}
+.modal-header-ext{
+	padding: 10px 15px 10px 15px !important;
+	font-size: 14px;
+}
+.close-ext{
+	opacity: 1 !important;
+}
+.navbar-ext{
+	min-height: 0px !important;
+	height: 35px !important;
+}
+.errorMsg{
+	display: none !important;
+}
+div.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable {
+        display: none !important;
+}
+.fieldMessage {
+    background: transparent;
+    padding: 2px 5px;
+    justify-content: flex-end;
+    display: flex;
+}
+.fieldMessage p {
+    margin: 0;
+    border-left: 1px solid #eee;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.fieldMessage p:first-child {
+    border-left: none;
+}
+.fieldMessage .asterikIcon {
+    margin-right: 4px;
+    font-size: 16px;
+    line-height: 12px;
+    margin-bottom: -8px;
+} 
